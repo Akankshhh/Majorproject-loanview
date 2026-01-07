@@ -33,7 +33,7 @@ const createSampleLoanData = (): NonNullable<LoanReportData> => ({
 });
 
 // A simple, safe number formatter specifically for the PDF to avoid special characters.
-const formatPdfNumber = (value: number | string | undefined): string => {
+const formatPdfNumber = (value: number | string | undefined, currency = false): string => {
   if (value === undefined || value === null) return 'N/A';
   const num = Number(value);
   if (isNaN(num)) {
@@ -41,7 +41,8 @@ const formatPdfNumber = (value: number | string | undefined): string => {
     return String(value);
   }
   // Converts number to a plain string with 2 decimal places, no currency symbols or commas.
-  return num.toFixed(2);
+  const fixedValue = num.toFixed(2);
+  return currency ? `INR ${fixedValue}` : fixedValue;
 };
 
 
@@ -139,7 +140,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
 
     const loanRequirements = {
       [t('applicationForm.sections.loanRequirement.purpose')]: applicationData.loanRequirement.purpose,
-      [t('applicationForm.sections.loanRequirement.amount')]: formatPdfNumber(applicationData.loanRequirement.amount),
+      [t('applicationForm.sections.loanRequirement.amount')]: formatPdfNumber(Number(applicationData.loanRequirement.amount), true),
       [t('applicationForm.sections.loanRequirement.repaymentPeriod')]: applicationData.loanRequirement.repaymentPeriod,
       [t('applicationForm.sections.loanRequirement.loanType')]: applicationData.loanRequirement.loanType,
     };
@@ -158,12 +159,12 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   finalY = addSectionTitle(t('pdf.keyFacts.title'), finalY);
   
   const keyFactsBody = [
-    [t('pdf.loanSummary.loanAmount'), formatPdfNumber(loanData.loanAmount)],
+    [t('pdf.loanSummary.loanAmount'), formatPdfNumber(loanData.loanAmount, true)],
     [t('pdf.loanSummary.interestRate'), `${loanData.interestRate.toFixed(2)}%`],
     [t('pdf.loanSummary.tenure'), `${loanData.loanTenureMonths / 12} ${t('pdf.years')}`],
-    [t('pdf.loanSummary.monthlyEMI'), formatPdfNumber(loanData.emi)],
-    [t('pdf.loanSummary.totalInterest'), formatPdfNumber(loanData.totalInterest)],
-    [t('pdf.loanSummary.totalPayment'), formatPdfNumber(loanData.totalPayment)]
+    [t('pdf.loanSummary.monthlyEMI'), formatPdfNumber(loanData.emi, true)],
+    [t('pdf.loanSummary.totalInterest'), formatPdfNumber(loanData.totalInterest, true)],
+    [t('pdf.loanSummary.totalPayment'), formatPdfNumber(loanData.totalPayment, true)]
   ];
 
   (doc as any).autoTable({
@@ -211,7 +212,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
     body: comparisonProducts.map(p => [
       p.bankName,
       `${p.interestRate.toFixed(2)}%`,
-      formatPdfNumber(p.emi)
+      formatPdfNumber(p.emi, true)
     ]),
     didParseCell: forceCustomFontHook
   });
@@ -243,9 +244,9 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
     if (showRow) {
       scheduleBody.push([
           i,
-          formatPdfNumber(principalPayment),
-          formatPdfNumber(interestPayment),
-          formatPdfNumber(Math.max(0, balance)),
+          formatPdfNumber(principalPayment, true),
+          formatPdfNumber(interestPayment, true),
+          formatPdfNumber(Math.max(0, balance), true),
       ]);
     } else if (i === initialMonthsToShow + 1) {
        scheduleBody.push(['...', '...', '...', '...']);
@@ -310,3 +311,5 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   const filename = `${t('appName')}_Report_${formatDate(new Date(), { year: 'numeric', month: '2-digit', day: '2-digit' })}.pdf`.replace(/[^a-zA-Z0-9_.-]/g, '_');
   doc.save(filename);
 };
+
+  
