@@ -12,7 +12,8 @@
     "viewApplications": "View Applications",
     "bankingAdvisor": "Banking Advisor",
     "login": "Login",
-    "profile": "Profile"
+    "profile": "Profile",
+    "howToPlay": "How to Play"
   },
   "dashboard": {
     "title": "Loan Dashboard",
@@ -349,9 +350,9 @@
       "balance": "Remaining Balance"
     },
     "nextSteps": {
-        "title": "Next Steps & Recommendations",
-        "contactBank": "1. Contact the banks with the most favorable rates from the 'Market Comparison' section to confirm their offers.",
-        "prepareDocuments": "2. Prepare necessary documents such as ID proof, address proof, and income statements for a faster application process."
+      "title": "Next Steps & Recommendations",
+      "contactBank": "1. Contact the banks with the most favorable rates from the 'Market Comparison' section to confirm their offers.",
+      "prepareDocuments": "2. Prepare necessary documents such as ID proof, address proof, and income statements for a faster application process."
     },
     "disclaimers": {
       "title": "Disclaimers and Alerts",

@@ -1,6 +1,6 @@
 
 import type { Language, NavItem, LoanMetric, LoanType, Bank, LoanTypeId, RateType, BankCategory } from '@/types';
-import { Home, User, GraduationCap, Car, Landmark, Percent, FileText, GitCompareArrows, HandCoins, FileDown, BadgeIndianRupee, Briefcase, Gem, Building, FileEdit, Calculator, Archive, Sparkles, LogIn, UserCircle, BarChart } from 'lucide-react'; // Added Sparkles, LogIn, UserCircle, BarChart
+import { Home, User, GraduationCap, Car, Landmark, Percent, FileText, GitCompareArrows, HandCoins, FileDown, BadgeIndianRupee, Briefcase, Gem, Building, FileEdit, Calculator, Archive, Sparkles, LogIn, UserCircle, BarChart, HelpCircle } from 'lucide-react'; // Added Sparkles, LogIn, UserCircle, BarChart, HelpCircle
 
 export const APP_NAME_KEY = "appName";
 
@@ -43,6 +43,7 @@ export const NAV_ITEMS: NavItem[] = [
   { href: '/ai-advisor', labelKey: 'nav.bankingAdvisor', icon: Sparkles },
   { href: '/report', labelKey: 'nav.downloadReport', icon: FileDown },
   { href: '/profile', labelKey: 'nav.profile', icon: UserCircle },
+  { href: '/how-to-play', labelKey: 'nav.howToPlay', icon: HelpCircle },
 ];
 
 export const DASHBOARD_METRICS: LoanMetric[] = [

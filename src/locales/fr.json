@@ -1,3 +1,4 @@
+
 {
   "appName": "LoanView",
   "nav": {
@@ -5,7 +6,8 @@
     "applyLoan": "Demander un Prêt",
     "compareLoans": "Comparer les Prêts",
     "interestRates": "Taux d'Intérêt",
-    "downloadReport": "Télécharger le Rapport"
+    "downloadReport": "Télécharger le Rapport",
+    "howToPlay": "Comment Jouer"
   },
   "dashboard": {
     "title": "Tableau de Bord des Prêts",
@@ -200,7 +202,7 @@
     "title": "Télécharger le Rapport du Tableau de Bord",
     "generateTitle": "Générer un Résumé PDF",
     "description": "Cliquez sur le bouton ci-dessous pour générer et télécharger un résumé PDF des données actuelles du tableau de bord des prêts.",
-    "infoText": "Le PDF comprendra les indicateurs clés, les taux d'intérêt par type de prêt et les offres de prêts spécifiques aux banques.",
+    "infoText": "Le PDF inclura les indicateurs clés, les taux d'intérêt par type de prêt et les offres de prêts spécifiques aux banques.",
     "downloadButton": "Générer et Télécharger le PDF",
     "imageAlt": "Représentation stylisée d'un rapport financier",
     "imageCaption": "Vos données de prêt complètes, résumées."
@@ -209,14 +211,14 @@
     "copyRight": "© {{year}} LoanView. Tous droits réservés."
   },
   "formValidation": {
-    "required": "Ce champ est requis.",
+    "required": "Ce champ est obligatoire.",
     "invalidEmail": "Adresse e-mail invalide.",
     "positiveNumber": "Doit être un nombre positif."
   },
   "pdf": {
     "reportGenerated": "Rapport généré le",
     "page": "Page",
-    "years": "Années",
+    "years": "Ans",
     "applicationSummary": {
       "title": "Résumé de la demande de prêt"
     },
@@ -232,7 +234,7 @@
       "interestRate": "Taux d'intérêt annuel",
       "tenure": "Durée",
       "monthlyEMI": "EMI mensuelle",
-      "totalInterest": "Intérêts totaux à payer",
+      "totalInterest": "Total des intérêts à payer",
       "totalPayment": "Paiement total (Principal + Intérêts)"
     },
     "paymentPlan": {
@@ -253,10 +255,8 @@
       "helpline": "Ligne d'assistance clientèle"
     },
     "summary": "Résumé",
-    "dashboardMetrics": "Statistiques du Tableau de Bord"
+    "dashboardMetrics": "Indicateurs du Tableau de Bord"
   },
   "currency": {
     "inr": "INR"
   },
-  "N/A": "N/A"
-}

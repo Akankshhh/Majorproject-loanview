@@ -5,7 +5,8 @@
     "applyLoan": "લોન માટે અરજી કરો",
     "compareLoans": "લોનની સરખામણી કરો",
     "interestRates": "વ્યાજ દરો",
-    "downloadReport": "રિપોર્ટ ડાઉનલોડ કરો"
+    "downloadReport": "રિપોર્ટ ડાઉનલોડ કરો",
+    "howToPlay": "કેવી રીતે રમવું"
   },
   "dashboard": {
     "title": "લોન ડેશબોર્ડ",
@@ -25,7 +26,7 @@
       "errorSuggestions": "સૂચનો મેળવી શકાયા નથી. કૃપા કરીને ફરી પ્રયાસ કરો."
     },
     "recentActivity": "તાજેતરની પ્રવૃત્તિ",
-    "noRecentActivity": "પ્રદર્શિત કરવા માટે કોઈ તાજેતરની પ્રવૃત્તિ નથી.",
+    "noRecentActivity": "પ્રદર્શિત કરવા માટે કોઈ તાજેતરની પ્રવૃત્ति નથી.",
     "loanInterestRatesChart": {
       "title": "લોન વ્યાજ દરોની ઝાંખી",
       "description": "વિવિધ પ્રકારની લોન માટે વ્યાજ દરોની દ્રશ્ય સરખામણી."
@@ -77,7 +78,7 @@
       "lowestAvgRateLoanType": "સૌથી વધુ સ્પર્ધાત્મક લોન પ્રકાર",
       "highestAvgRateLoanType": "સૌથી મોંઘો લોન પ્રકાર",
       "avgRateSuffix": "સરેરાશ દર",
-      "noData": "આંકડા માટે પૂરતો ડેટા નથી."
+      "noData": "આંકડા માટે પૂરતો ડેટਾ નથી."
     },
     "bankRatesComparisonChart": {
       "title": "પસંદ કરેલ લોન પ્રકાર માટે બેંક દરોની સરખામણી",

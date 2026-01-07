@@ -5,7 +5,8 @@
     "applyLoan": "ঋণৰ বাবে আবেদন কৰক",
     "compareLoans": "ঋণ তুলনা কৰক",
     "interestRates": "সুদৰ হাৰ",
-    "downloadReport": "প্ৰতিবেদন ডাউনলোড কৰক"
+    "downloadReport": "প্ৰতিবেদন ডাউনলোড কৰক",
+    "howToPlay": "কেনেকৈ খেলিব"
   },
   "dashboard": {
     "title": "ঋণ ডেশ্বৰ্ড",
@@ -17,7 +18,7 @@
       "description": "ঋণৰ তথ্যৰ বাবে সংস্কৃতিগতভাৱে প্ৰাসঙ্গিক দৃশ্যায়ন আৰু ব্যাখ্যাৰ পৰামৰ্শ ল'বলৈ এটা লক্ষ্য জনগাঁথনি প্ৰবিষ্ট কৰক।",
       "demographicLabel": "লক্ষ্য জনগাঁথনি",
       "demographicPlaceholder": "যেনে, চহৰ অঞ্চলৰ যুৱ পেছাদাৰীসকল",
-      "getSuggestions": "পৰামৰ্ש লওক",
+      "getSuggestions": "পৰামৰ্শ লওক",
       "visualizationSuggestion": "দৃশ্যায়নৰ পৰামৰ্ש",
       "interpretationSuggestion": "ব্যাখ্যাৰ পৰামৰ্ש",
       "noSuggestions": "এটা জনগাঁথনি প্ৰবিষ্ট কৰক আৰু AI অন্তৰ্দৃষ্টি চাবলৈ 'পৰামৰ্ש লওক' ক্লিক কৰক।",
@@ -260,3 +261,4 @@
   },
   "N/A": "N/A"
 }
+```

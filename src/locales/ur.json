@@ -1,3 +1,4 @@
+
 {
   "appName": "LoanView",
   "nav": {
@@ -5,7 +6,8 @@
     "applyLoan": "قرض کے لئے درخواست دیں",
     "compareLoans": "قرضوں کا موازنہ کریں",
     "interestRates": "سود کی شرحیں",
-    "downloadReport": "رپورٹ ڈاؤن لوڈ کریں"
+    "downloadReport": "رپورٹ ڈاؤن لوڈ کریں",
+    "howToPlay": "کیسے کھیلیں"
   },
   "dashboard": {
     "title": "قرض ڈیش بورڈ",
@@ -16,7 +18,7 @@
       "title": "AI سے چلنے والی لوکلائزیشن بصیرتیں",
       "description": "قرض کے ڈیٹا کے لئے ثقافتی طور پر متعلقہ تصوراتی اور تشریحی تجاویز حاصل کرنے کے لئے ہدف آبادی درج کریں۔",
       "demographicLabel": "ہدف آبادی",
-      "demographicPlaceholder": "مثال کے طور پر، شہری علاقے میں نوجوان پیشہ ور افراد",
+      "demographicPlaceholder": "مثال کے طور पर، شہری علاقے میں نوجوان پیشہ ور افراد",
       "getSuggestions": "تجاویز حاصل کریں",
       "visualizationSuggestion": "تصوراتی تجویز",
       "interpretationSuggestion": "تشریحی تجویز",
@@ -82,7 +84,7 @@
     "bankRatesComparisonChart": {
       "title": "منتخب کردہ قرض کی قسم کے لئے بینک کی شرحوں کا موازنہ",
       "description": "مختلف بینکوں کے درمیان سود کی شرحیں کیسے موازنہ کرتی ہیں یہ دیکھنے کے لئے قرض کی قسم منتخب کریں۔",
-      "selectLoanTypePlaceholder": "موازنہ करने के لئے قرض کی قسم منتخب کریں",
+      "selectLoanTypePlaceholder": "موازنہ کرنے کے لئے قرض کی قسم منتخب کریں",
       "noData": "منتخب کردہ قرض کی قسم اور فلٹرز کے لئے کوئی ڈیٹا دستیاب نہیں ہے۔",
       "yAxisLabel": "سود کی شرح (%)"
     }
@@ -224,7 +226,7 @@
       "title": "کلیدی حقائق کا بیان"
     },
     "marketComparison": {
-      "title": "{{loanType}} کے لئے مارکیٹ کا موازنہ"
+      "title": "{{loanType}} کے لئے مارکیট کا موازنہ"
     },
     "loanSummary": {
       "loanAmount": "قرض کی رقم",

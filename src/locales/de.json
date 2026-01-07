@@ -1,3 +1,4 @@
+
 {
   "appName": "LoanView",
   "nav": {
@@ -5,7 +6,8 @@
     "applyLoan": "Kredit Beantragen",
     "compareLoans": "Kredite Vergleichen",
     "interestRates": "Zinssätze",
-    "downloadReport": "Bericht Herunterladen"
+    "downloadReport": "Bericht Herunterladen",
+    "howToPlay": "Spielanleitung"
   },
   "dashboard": {
     "title": "Kredit-Dashboard",

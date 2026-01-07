@@ -5,7 +5,8 @@
     "applyLoan": "ঋণের জন্য আবেদন করুন",
     "compareLoans": "ঋণ তুলনা করুন",
     "interestRates": "সুদের হার",
-    "downloadReport": "রিপোর্ট ডাউনলোড করুন"
+    "downloadReport": "রিপোর্ট ডাউনলোড করুন",
+    "howToPlay": "কীভাবে খেলবেন"
   },
   "dashboard": {
     "title": "ঋণ ড্যাশবোর্ড",
@@ -260,3 +261,4 @@
   },
   "N/A": "N/A"
 }
+```

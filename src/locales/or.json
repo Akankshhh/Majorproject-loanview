@@ -2,216 +2,260 @@
 {
   "appName": "LoanView",
   "nav": {
-    "dashboard": "Dashboard",
-    "applyLoan": "Apply for Loan",
-    "compareLoans": "Compare Loans",
-    "interestRates": "Interest Rates",
-    "downloadReport": "Download Report"
+    "dashboard": "ଡ୍ୟାସବୋର୍ଡ",
+    "applyLoan": "ଋଣ ପାଇଁ ଆବେଦନ କରନ୍ତୁ",
+    "compareLoans": "ଋଣ ତୁଳନା କରନ୍ତୁ",
+    "interestRates": "ସୁଧ ହାର",
+    "downloadReport": "ରିପୋର୍ଟ ଡାଉନଲୋଡ କରନ୍ତୁ",
+    "howToPlay": "କିପରି ଖେଳିବେ"
   },
   "dashboard": {
-    "title": "Loan Dashboard",
-    "totalLoans": "Total Loans",
-    "avgLoanSize": "Average Loan Size (INR)",
-    "approvalRate": "Approval Rate",
+    "title": "ଋଣ ଡ୍ୟାସବୋର୍ଡ",
+    "totalLoans": "ମୋଟ ଋଣ",
+    "avgLoanSize": "ହାରାହାରି ୠଣ ପରିମାଣ (INR)",
+    "approvalRate": "ଅନୁମୋଦନ ହାର",
     "aiSuggestions": {
-      "title": "AI-Powered Localization Insights",
-      "description": "Enter a target demographic to get culturally relevant visualization and interpretation suggestions for the loan data.",
-      "demographicLabel": "Target Demographic",
-      "demographicPlaceholder": "e.g., Young Professionals in Urban Area",
-      "getSuggestions": "Get Suggestions",
-      "visualizationSuggestion": "Visualization Suggestion",
-      "interpretationSuggestion": "Interpretation Suggestion",
-      "noSuggestions": "Enter a demographic and click 'Get Suggestions' to see AI insights.",
-      "loadingSuggestions": "Loading suggestions...",
-      "errorSuggestions": "Could not fetch suggestions. Please try again."
+      "title": "AI-ପରିଚାଳିତ ସ୍ଥାନୀୟକରଣ ଅନ୍ତର୍ଦୃଷ୍ଟି",
+      "description": "ଋଣ ଡାଟା ପାଇଁ ସାଂସ୍କୃତିକ ଭାବରେ ପ୍ରାସଙ୍ଗିକ ଦୃଶ୍ୟକରଣ ଏବଂ ବ୍ୟାଖ୍ୟା ପରାମର୍ଶ ପାଇବା ପାଇଁ ଏକ ଲକ୍ଷ୍ୟ ଜନସାଂଖ୍ୟିକ ପ୍ରବେଶ କରନ୍ତୁ।",
+      "demographicLabel": "ଲକ୍ଷ୍ୟ ଜନସାଂଖ୍ୟିକ",
+      "demographicPlaceholder": "ଯଥା, ସହରୀ ଅଞ୍ଚଳରେ ଯୁବ ବୃତ୍ତିଗତମାନେ",
+      "getSuggestions": "ପରାମର୍ଶ ପାଆନ୍ତୁ",
+      "visualizationSuggestion": "ଦୃଶ୍ୟକରଣ ପରାମର୍ଶ",
+      "interpretationSuggestion": "ବ୍ୟାଖ୍ୟା ପରାମର୍ଶ",
+      "noSuggestions": "ଏକ ଜନସାଂଖ୍ୟିକ ପ୍ରବେଶ କରନ୍ତୁ ଏବଂ AI ଅନ୍ତର୍ଦୃଷ୍ଟି ଦେଖିବା ପାଇଁ 'ପରାମର୍ଶ ପାଆନ୍ତୁ' କ୍ଲିକ୍ କରନ୍ତୁ।",
+      "loadingSuggestions": "ପରାମର୍ଶ ଲୋଡ୍ ହେଉଛି...",
+      "errorSuggestions": "ପରାମର୍ଶ ଆଣିବାରେ ଅସମର୍ଥ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।"
     },
-    "recentActivity": "Recent Activity",
-    "noRecentActivity": "No recent activity to display.",
+    "recentActivity": "ସମ୍ପ୍ରତି କାର୍ଯ୍ୟକଳାପ",
+    "noRecentActivity": "ପ୍ରଦର୍ଶନ କରିବାକୁ କୌଣସି ସମ୍ପ୍ରତି କାର୍ଯ୍ୟକଳାପ ନାହିଁ।",
     "loanInterestRatesChart": {
-      "title": "Loan Interest Rates Overview",
-      "description": "A visual comparison of interest rates for different loan types."
+      "title": "ଋଣ ସୁଧ ହାରର ଏକ ସମୀକ୍ଷା",
+      "description": "ବିଭିନ୍ନ ପ୍ରକାରର ଋଣ ପାଇଁ ସୁଧ ହାରର ଏକ ଦୃଶ୍ୟମାନ ତୁଳନା।"
     },
     "bankLoanRates": {
-      "title": "Bank Loan Offerings",
-      "description": "Compare interest rates for various loans from different banks.",
-      "bankName": "Bank Name",
-      "loanType": "Loan Type",
-      "interestRate": "Interest Rate (%)",
+      "title": "ବ୍ୟାଙ୍କ ଋଣ ଅଫର୍",
+      "description": "ବିଭିନ୍ନ ବ୍ୟାଙ୍କରୁ ବିଭିନ୍న ଋଣ ପାଇଁ ସୁଧ ହାର ତୁଳନା କରନ୍ତୁ।",
+      "bankName": "ବ୍ୟାଙ୍କ ନାମ",
+      "loanType": "ଋଣର ପ୍ରକାର",
+      "interestRate": "ସୁଧ ହାର (%)",
       "filters": {
-        "searchPlaceholder": "Search by bank or loan type...",
-        "selectBank": "Select Bank",
-        "allBanks": "All Banks",
-        "selectLoanType": "Select Loan Type",
-        "allLoanTypes": "All Loan Types",
-        "interestRateRange": "Interest Rate Range",
-        "minRate": "Min Rate",
-        "maxRate": "Max Rate",
-        "selectBankCategory": "Select Bank Category",
-        "allBankCategories": "All Categories",
-        "publicSector": "Public Sector",
-        "privateSector": "Private Sector",
-        "smallFinanceBank": "Small Finance Bank",
-        "paymentBank": "Payment Bank",
+        "searchPlaceholder": "ବ୍ୟାଙ୍କ କିମ୍ବା ଋଣ ପ୍ରକାର ଦ୍ୱାରା ଖୋଜନ୍ତୁ...",
+        "selectBank": "ବ୍ୟାଙ୍କ ଚୟନ କରନ୍ତୁ",
+        "allBanks": "ସମସ୍ତ ବ୍ୟାଙ୍କ",
+        "selectLoanType": "ଋଣର ପ୍ରକାର ଚୟନ କରନ୍ତୁ",
+        "allLoanTypes": "ସମସ୍ତ ଋଣ ପ୍ରକାର",
+        "interestRateRange": "ସୁଧ ହାର ପରିସର",
+        "minRate": "ନିମ୍ନତମ ହାର",
+        "maxRate": "ସର୍ବାଧିକ ହାର",
+        "selectBankCategory": "ବ୍ୟାଙ୍କ ଶ୍ରେଣୀ ଚୟନ କରନ୍ତୁ",
+        "allBankCategories": "ସମସ୍ତ ଶ୍ରେଣୀ",
+        "publicSector": "ସରକାରୀ କ୍ଷେତ୍ର",
+        "privateSector": "ଘରୋଇ କ୍ଷେତ୍ର",
+        "smallFinanceBank": "କ୍ଷୁଦ୍ର ଅର୍ଥ ବ୍ୟାଙ୍କ",
+        "paymentBank": "ପେମେଣ୍ଟ ବ୍ୟାଙ୍କ",
         "nbfc": "NBFC",
-        "foreignBank": "Foreign Bank"
+        "foreignBank": "ବିଦେଶୀ ବ୍ୟାଙ୍କ"
       },
-      "downloadCsv": "Download CSV",
+      "downloadCsv": "CSV ଡାଉନଲୋଡ କରନ୍ତୁ",
       "tooltip": {
-        "tenure": "Tenure: {{min}} - {{max}} months",
-        "maxAmount": "Max Amount: {{amount}}",
-        "processingFee": "Processing Fee: {{fee}}",
-        "rateType": "Rate Type: {{type}}"
+        "tenure": "କାର୍ଯ୍ୟକାଳ: {{min}} - {{max}} ମାସ",
+        "maxAmount": "ସର୍ବାଧିକ ରାଶି: {{amount}}",
+        "processingFee": "ପ୍ରକ୍ରିୟାକରଣ ଫି: {{fee}}",
+        "rateType": "ହାର ପ୍ରକାର: {{type}}"
       },
-       "noResults": "No loan products match your current filters."
+      "noResults": "ଆପଣଙ୍କର ବର୍ତ୍ତମାନର ଫିଲ୍ଟର ସହିତ କୌଣସି ଋଣ ଉତ୍ପାଦ ମେଳ ଖାଉନାହିଁ।"
     },
     "themeToggle": {
-      "light": "Switch to Light Mode",
-      "dark": "Switch to Dark Mode",
-      "toggle": "Toggle theme"
+      "light": "ଲାଇଟ୍ ମୋଡକୁ ସୁଇଚ୍ କରନ୍ତୁ",
+      "dark": "ଡାର୍କ ମୋଡକୁ ସୁଇଚ୍ କରନ୍ତୁ",
+      "toggle": "ଥିମ୍ ବଦଳାନ୍ତୁ"
     },
     "keyRateStatistics": {
-      "title": "Key Rate Statistics",
-      "description": "Summary of interest rates based on current filters.",
-      "overallAvgRate": "Overall Avg. Rate",
-      "overallMinRate": "Overall Min. Rate",
-      "overallMaxRate": "Overall Max. Rate",
-      "lowestAvgRateLoanType": "Most Competitive Loan Type",
-      "highestAvgRateLoanType": "Most Expensive Loan Type",
-      "avgRateSuffix": "Avg. Rate",
-      "noData": "Not enough data for statistics."
+      "title": "ମୁଖ୍ୟ ହାର ପରିସଂଖ୍ୟାନ",
+      "description": "ବର୍ତ୍ତମାନର ଫିଲ୍ଟର ଉପରେ ଆଧାର କରି ସୁଧ ହାରର ସାରାଂଶ।",
+      "overallAvgRate": "ସାମଗ୍ରିକ ହାରାହାରି ହାର",
+      "overallMinRate": "ସାମଗ୍ରିକ ନିମ୍ନତମ ହାର",
+      "overallMaxRate": "ସାମଗ୍ରିକ ସର୍ବାଧିକ ହାର",
+      "lowestAvgRateLoanType": "ସବୁଠାରୁ ପ୍ରତିଯୋଗୀ ଋଣ ପ୍ରକାର",
+      "highestAvgRateLoanType": "ସବୁଠାରୁ ମହଙ୍ଗା ଋଣ ପ୍ରକାର",
+      "avgRateSuffix": "ହାରାହାରି ହାର",
+      "noData": "ପରିସଂଖ୍ୟାନ ପାଇଁ ଯଥେଷ୍ଟ ତଥ୍ୟ ନାହିଁ।"
     },
     "bankRatesComparisonChart": {
-      "title": "Bank Rates Comparison for Selected Loan Type",
-      "description": "Select a loan type to see how interest rates compare across different banks.",
-      "selectLoanTypePlaceholder": "Select a Loan Type to Compare",
-      "noData": "No data available for the selected loan type and filters.",
-      "yAxisLabel": "Interest Rate (%)"
+      "title": "ଚୟନିତ ଋଣ ପ୍ରକାର ପାଇଁ ବ୍ୟାଙ୍କ ହାର ତୁଳନା",
+      "description": "ବିଭିନ୍ନ ବ୍ୟାଙ୍କ ମଧ୍ୟରେ ସୁଧ ହାର କିପରି ତୁଳନା କରାଯାଏ ତାହା ଦେଖିବା ପାଇଁ ଏକ ଋଣ ପ୍ରକାର ଚୟନ କରନ୍ତୁ।",
+      "selectLoanTypePlaceholder": "ତୁଳନା କରିବା ପାଇଁ ଏକ ଋଣ ପ୍ରକାର ଚୟନ କରନ୍ତୁ",
+      "noData": "ଚୟନିତ ଋଣ ପ୍ରକାର ଏବଂ ଫିଲ୍ଟର ପାଇଁ କୌଣସି ତଥ୍ୟ ଉପଲବ୍ଧ ନାହିଁ।",
+      "yAxisLabel": "ସୁଧ ହାର (%)"
     }
   },
   "loanTypes": {
     "home": {
-      "name": "Home Loan",
-      "description": "Finance your dream home with competitive rates.",
-      "processingFee": "Up to 1% of loan amount"
+      "name": "ଗୃହ ଋଣ",
+      "description": "ପ୍ରତିଯୋଗୀ ଦରରେ ଆପଣଙ୍କ ସ୍ୱପ୍ନର ଘରକୁ ଅର୍ଥ ଯୋଗାଣ କରନ୍ତୁ।",
+      "processingFee": "ଋଣ ରାଶିର 1% ପର୍ଯ୍ୟନ୍ତ"
     },
     "personal": {
-      "name": "Personal Loan",
-      "description": "Flexible loans for your personal needs.",
-      "processingFee": "1-2% of loan amount"
+      "name": "ବ୍ୟକ୍ତିଗତ ଋଣ",
+      "description": "ଆପଣଙ୍କ ବ୍ୟକ୍ତିଗତ ଆବଶ୍ୟକତା ପାଇଁ ନମନୀୟ ଋଣ।",
+      "processingFee": "ଋଣ ରାଶିର 1-2%"
     },
     "education": {
-      "name": "Education Loan",
-      "description": "Invest in your future with our education financing.",
-      "processingFee": "Typically 0.5-1%"
+      "name": "ଶିକ୍ଷା ଋଣ",
+      "description": "ଆମର ଶିକ୍ଷା ଆର୍ଥିକ ସହାୟତା ସହିତ ଆପଣଙ୍କ ଭବିଷ୍ୟତରେ ନିବେଶ କରନ୍ତୁ।",
+      "processingFee": "ସାଧାରଣତଃ 0.5-1%"
     },
     "vehicle": {
-      "name": "Vehicle Loan",
-      "description": "Get on the road with our attractive vehicle loans.",
-      "processingFee": "Up to 1.5% of loan amount"
+      "name": "ଯାନବାହାନ ଋଣ",
+      "description": "ଆମର ଆକର୍ଷଣୀୟ ଯାନବାହାନ ଋଣ ସହିତ ରାସ୍ତାକୁ ଆସନ୍ତୁ।",
+      "processingFee": "ଋଣ ରାଶିର 1.5% ପର୍ଯ୍ୟନ୍ତ"
     },
     "business": {
-      "name": "Business Loan",
-      "description": "Fuel your business growth with our tailored loans.",
-      "processingFee": "1-2.5% of loan amount, subject to terms"
+      "name": "ବ୍ୟବସାୟ ଋଣ",
+      "description": "ଆମର ଅନୁକୂଳ ଋଣ ସହିତ ଆପଣଙ୍କ ବ୍ୟବସାୟର ଅଭିବୃଦ୍ଧିକୁ ତ୍ୱରାନ୍ୱିତ କରନ୍ତୁ।",
+      "processingFee": "ଋଣ ରାଶିର 1-2.5%, ସର୍ତ୍ତାବଳୀ ସହିତ"
     },
     "gold": {
-      "name": "Gold Loan",
-      "description": "Leverage your gold assets for immediate financial needs.",
-      "processingFee": "0.5-1.5% of loan amount"
+      "name": "ସୁନା ଋଣ",
+      "description": "ତୁରନ୍ତ ଆର୍ଥିକ ଆବଶ୍ୟକତା ପାଇଁ ଆପଣଙ୍କର ସୁନା ସମ୍ପତ୍ତିର ଲାଭ ଉଠାନ୍ତୁ।",
+      "processingFee": "ଋଣ ରାଶିର 0.5-1.5%"
     },
     "rateTypes": {
-      "fixed": "Fixed",
-      "floating": "Floating"
+      "fixed": "ସ୍ଥିର",
+      "floating": "ପରିବର୍ତ୍ତନଶୀଳ"
     }
   },
   "loanApplication": {
-    "title": "Loan Application",
+    "title": "ଋଣ ଆବେଦନ",
     "steps": {
-      "personalDetails": "Personal Details",
-      "incomeDetails": "Income Details",
-      "documentUpload": "Document Upload",
-      "reviewSubmit": "Review & Submit"
+      "personalDetails": "ବ୍ୟକ୍ତିଗତ ବିବରଣୀ",
+      "incomeDetails": "ଆୟ ବିବରଣୀ",
+      "documentUpload": "ଡକ୍ୟୁମେଣ୍ଟ ଅପଲୋଡ୍",
+      "reviewSubmit": "ସମୀକ୍ଷା ଓ ଦାଖଲ"
     },
-    "next": "Next",
-    "previous": "Previous",
-    "submit": "Submit Application",
-    "selectLoanType": "Select Loan Type",
-    "selectLoanTypePlaceholder": "Choose a loan type...",
+    "next": "ପରବର୍ତ୍ତୀ",
+    "previous": "ପୂର୍ବବର୍ତ୍ତୀ",
+    "submit": "ଆବେଦନ ଦାଖଲ କରନ୍ତୁ",
+    "selectLoanType": "ଋଣର ପ୍ରକାର ଚୟନ କରନ୍ତୁ",
+    "selectLoanTypePlaceholder": "ଏକ ଋଣ ପ୍ରକାର ଚୟନ କରନ୍ତୁ...",
     "personalDetailsForm": {
-      "fullName": "Full Name",
-      "fullNamePlaceholder": "Enter your full name",
-      "email": "Email Address",
-      "emailPlaceholder": "Enter your email",
-      "phone": "Phone Number",
-      "phonePlaceholder": "Enter your phone number"
+      "fullName": "ପୂରା ନାମ",
+      "fullNamePlaceholder": "ଆପଣଙ୍କର ପୂରା ନାମ ପ୍ରବେଶ କରନ୍ତୁ",
+      "email": "ଇମେଲ ଠିକଣା",
+      "emailPlaceholder": "ଆପଣଙ୍କର ଇମେଲ ପ୍ରବେଶ କରନ୍ତୁ",
+      "phone": "ଫୋନ୍ ନମ୍ବର",
+      "phonePlaceholder": "ଆପଣଙ୍କର ଫୋନ୍ ନମ୍ବର ପ୍ରବେଶ କରନ୍ତୁ"
     },
     "incomeDetailsForm": {
-      "monthlyIncome": "Monthly Income (INR)",
-      "monthlyIncomePlaceholderINR": "e.g., 50000",
-      "employmentStatus": "Employment Status",
-      "employmentStatusPlaceholder": "Select employment status",
-      "employed": "Employed",
-      "selfEmployed": "Self-Employed",
-      "unemployed": "Unemployed"
+      "monthlyIncome": "ମାସିକ ଆୟ (INR)",
+      "monthlyIncomePlaceholderINR": "ଯଥା, 50000",
+      "employmentStatus": "ନିଯୁକ୍ତି ସ୍ଥିତି",
+      "employmentStatusPlaceholder": "ନିଯୁକ୍ତି ସ୍ଥିତି ଚୟନ କରନ୍ତୁ",
+      "employed": "ନିଯୁକ୍ତ",
+      "selfEmployed": "ସ୍ୱ-ନିଯୁକ୍ତ",
+      "unemployed": "ବେକାର"
     },
     "documentUploadForm": {
-      "idProof": "ID Proof",
-      "addressProof": "Address Proof",
-      "uploadHint": "Click or drag file to this area to upload",
-      "notUploaded": "Not Uploaded"
+      "idProof": "ପରିଚୟ ପତ୍ର",
+      "addressProof": "ଠିକଣା ପ୍ରମାଣ",
+      "uploadHint": "ଅପଲୋଡ୍ କରିବାକୁ ଏହି ସ୍ଥାନକୁ ଫାଇଲ୍ କ୍ଲିକ୍ କରନ୍ତୁ କିମ୍ବା ଟାଣନ୍ତୁ",
+      "notUploaded": "ଅପଲୋଡ୍ ହୋଇନାହିଁ"
     },
     "reviewSubmitForm": {
-      "reviewDetails": "Please review your application details before submitting.",
-      "submitting": "Submitting...",
-      "loading": "Loading details..."
+      "reviewDetails": "ଦାଖଲ କରିବା ପୂର୍ବରୁ ଦୟାକରି ଆପଣଙ୍କର ଆବେଦନ ବିବରଣୀ ସମୀକ୍ଷା କରନ୍ତୁ।",
+      "submitting": "ଦାଖଲ କରାଯାଉଛି...",
+      "loading": "ବିବରଣୀ ଲୋଡ୍ ହେଉଛି..."
     },
-    "applicationSubmitted": "Application Submitted!",
-    "applicationSubmittedDesc": "Your loan application has been successfully submitted. We will contact you shortly."
+    "applicationSubmitted": "ଆବେଦନ ଦାଖଲ ହେଲା!",
+    "applicationSubmittedDesc": "ଆପଣଙ୍କର ଋଣ ଆବେଦନ ସଫଳତାର ସହିତ ଦାଖଲ କରାଯାଇଛି। ଆମେ ଶୀଘ୍ର ଆପଣଙ୍କ ସହିତ ଯୋଗାଯୋଗ କରିବୁ।"
   },
   "compareLoans": {
-    "title": "Compare Loan Options",
-    "loanTypeComparison": "Loan Type Comparison",
-    "loanType": "Loan Type",
-    "interestRate": "Interest Rate",
-    "maxTenure": "Max Tenure (Months)",
-    "maxAmount": "Max Amount (INR)",
-    "calculateEMI": "Calculate EMI",
-    "selectForEMI": "Select for EMI Calc",
-    "loanAmount": "Loan Amount",
-    "loanTenure": "Loan Tenure (Months)",
-    "monthlyEMI": "Monthly EMI: {{emi}}",
-    "enterAllDetails": "Please enter Loan Amount, Tenure, and select/enter an Interest Rate.",
-    "clickToCalculateEMI": "Click 'Calculate EMI' to see the monthly payment.",
-    "usingSelectedRate": "Using selected loan type rate: {{rate}}%",
-    "selectOrEnterRate": "Select a loan type from the table above or enter an interest rate manually.",
-    "calculateEMIButton": "Calculate EMI"
+    "title": "ଋଣ ବିକଳ୍ପ ତୁଳନା କରନ୍ତୁ",
+    "loanTypeComparison": "ଋଣ ପ୍ରକାର ତୁଳନା",
+    "loanType": "ଋଣର ପ୍ରକାର",
+    "interestRate": "ସୁଧ ହାର",
+    "maxTenure": "ସର୍ବାଧିକ କାର୍ଯ୍ୟକାଳ (ମାସ)",
+    "maxAmount": "ସର୍ବାଧିକ ରାଶି (INR)",
+    "calculateEMI": "EMI ଗଣନା କରନ୍ତୁ",
+    "selectForEMI": "EMI ଗଣନା ପାଇଁ ଚୟନ କରନ୍ତୁ",
+    "loanAmount": "ଋଣ ରାଶି",
+    "loanTenure": "ଋଣ କାର୍ଯ୍ୟକାଳ (ମାସ)",
+    "monthlyEMI": "ମାସିକ EMI: {{emi}}",
+    "enterAllDetails": "ଦୟାକରି ଋଣ ରାଶି, କାର୍ଯ୍ୟକାଳ, ଏବଂ ଏକ ସୁଧ ହାର ଚୟନ/ପ୍ରବେଶ କରନ୍ତୁ।",
+    "clickToCalculateEMI": "ମାସିକ ପେମେଣ୍ଟ ଦେଖିବାକୁ 'EMI ଗଣନା କରନ୍ତୁ' କ୍ଲିକ୍ କରନ୍ତୁ।",
+    "usingSelectedRate": "ଚୟନିତ ଋଣ ପ୍ରକାର ହାର ବ୍ୟବହାର କରି: {{rate}}%",
+    "selectOrEnterRate": "ଉପରୋକ୍ତ ଟେବୁଲରୁ ଏକ ଋଣ ପ୍ରକାର ଚୟନ କରନ୍ତୁ କିମ୍ବା ମାନୁଆଲି ଏକ ସୁଧ ହାର ପ୍ରବେଶ କରନ୍ତୁ।",
+    "calculateEMIButton": "EMI ଗଣନା କରନ୍ତୁ",
+    "emiDetails": "EMI ବିବରଣୀ",
+    "loanRepaymentBreakdown": "ଋଣ ପରିଶୋଧ ବିଭାଜନ",
+    "principalAmount": "ମୂଳ ରାଶି",
+    "totalInterest": "ମୋଟ ସୁଧ",
+    "totalPayment": "ମୋଟ ପେମେଣ୍ଟ"
   },
   "interestRatesPage": {
-    "title": "Current Interest Rates",
-    "loanCategory": "Loan Category",
-    "rate": "Interest Rate (p.a.)",
-    "updatedOn": "Rates updated on {{date}}"
+    "title": "ବର୍ତ୍ତମାନର ସୁଧ ହାର",
+    "loanCategory": "ଋଣ ଶ୍ରେଣୀ",
+    "rate": "ସୁଧ ହାର (p.a.)",
+    "updatedOn": "ହାର {{date}} ରେ ଅପଡେଟ୍ ହୋଇଛି"
   },
   "reportPage": {
-    "title": "Download Dashboard Report",
-    "generateTitle": "Generate PDF Summary",
-    "description": "Click the button below to generate and download a PDF summary of the current loan dashboard data.",
-    "infoText": "The PDF will include key metrics, loan type interest rates, and bank-specific loan offerings.",
-    "downloadButton": "Generate and Download PDF",
-    "imageAlt": "Stylized representation of a financial report",
-    "imageCaption": "Your comprehensive loan data, summarized."
+    "title": "ଡ୍ୟାସବୋର୍ଡ ରିପୋର୍ଟ ଡାଉନଲୋଡ କରନ୍ତୁ",
+    "generateTitle": "PDF ସାରାଂଶ ସୃଷ୍ଟି କରନ୍ତୁ",
+    "description": "ବର୍ତ୍ତମାନର ଋଣ ଡ୍ୟାସବୋର୍ଡ ଡାଟାର ଏକ PDF ସାରାଂଶ ସୃଷ୍ଟି ଏବଂ ଡାଉନଲୋଡ କରିବାକୁ ନିମ୍ନରେ ଥିବା ବଟନ୍ କ୍ଲିକ୍ କରନ୍ତୁ।",
+    "infoText": "PDFରେ ମୁଖ୍ୟ ମେଟ୍ରିକ୍ସ, ଋଣ ପ୍ରକାର ଅନୁଯାୟୀ ସୁଧ ହାର, ଏବଂ ବ୍ୟାଙ୍କ-ନିର୍ଦ୍ଦିଷ୍ଟ ଋଣ ଅଫର୍ ଅନ୍ତର୍ଭୁକ୍ତ ହେବ।",
+    "downloadButton": "PDF ସୃଷ୍ଟି ଓ ଡାଉନଲୋଡ କରନ୍ତୁ",
+    "imageAlt": "ଏକ ଆର୍ଥିକ ରିପୋର୍ଟର ଶୈଳୀକୃତ ପ୍ରତିନିଧିତ୍ୱ",
+    "imageCaption": "ଆପଣଙ୍କର ବିସ୍ତୃତ ଋଣ ତଥ୍ୟ, ସଂକ୍ଷିପ୍ତ।"
   },
   "footer": {
-    "copyRight": "© {{year}} LoanView. All rights reserved."
+    "copyRight": "© {{year}} LoanView. ସର୍ବସ୍ୱତ୍ତ୍ୱ ସଂରକ୍ଷିତ।"
   },
   "formValidation": {
-    "required": "This field is required.",
-    "invalidEmail": "Invalid email address.",
-    "positiveNumber": "Must be a positive number."
+    "required": "ଏହି ଫିଲ୍ଡ ଆବଶ୍ୟକ।",
+    "invalidEmail": "ଅବୈଧ ଇମେଲ ଠିକଣା।",
+    "positiveNumber": "ଏକ ଧନାତ୍ମକ ସଂଖ୍ୟା ହେବା ଆବଶ୍ୟକ।"
   },
   "pdf": {
-    "summary": "Summary",
-    "dashboardMetrics": "Dashboard Metrics"
+    "reportGenerated": "ରିପୋର୍ଟ ସୃଷ୍ଟି ହୋଇଛି",
+    "page": "ପୃଷ୍ଠା",
+    "years": "ବର୍ଷ",
+    "applicationSummary": {
+      "title": "ଋଣ ଆବେଦନର ସାରାଂଶ"
+    },
+    "keyFacts": {
+      "title": "ମୁଖ୍ୟ ତଥ୍ୟ ବିବରଣୀ"
+    },
+    "marketComparison": {
+      "title": "{{loanType}} ପାଇଁ ବଜାର ତୁଳନା"
+    },
+    "loanSummary": {
+      "loanAmount": "ଋଣ ରାଶି",
+      "principalAmount": "ମୂଳ ରାଶି",
+      "interestRate": "ବାର୍ଷିକ ସୁଧ ହାର",
+      "tenure": "କାର୍ଯ୍ୟକାଳ",
+      "monthlyEMI": "ମାସିକ EMI",
+      "totalInterest": "ମୋଟ ଦେୟ ସୁଧ",
+      "totalPayment": "ମୋଟ ପେମେଣ୍ଟ (ମୂଳ + ସୁଧ)"
+    },
+    "paymentPlan": {
+      "title": "ପେମେଣ୍ଟ ଯୋଜନା (ଅମୋର୍ଟାଇଜେସନ୍ ସୂଚୀ)",
+      "month": "ମାସ #",
+      "principal": "ମୂଳ",
+      "interest": "ସୁଧ",
+      "totalPayment": "ମୋଟ ପେମେଣ୍ଟ",
+      "balance": "ବାକି ଥିବା ରାଶି"
+    },
+    "disclaimers": {
+      "title": "ଅସ୍ୱୀକାର ଏବଂ ସତର୍କତା",
+      "discrepancy": "ଦୟାକରି ଏହି ବିବରଣୀକୁ ଧ୍ୟାନର ସହ ଯାଞ୍ଚ କରନ୍ତୁ। କୌଣସି ଅମେଳ ଥିଲେ ବିବରଣୀ ତାରିଖର 30 ଦିନ ମଧ୍ୟରେ ବ୍ୟାଙ୍କକୁ ଜଣାନ୍ତୁ।",
+      "fraudWarning": "ଜାଲିଆତି ସତର୍କତା: ଆପଣଙ୍କର PIN, OTP, କିମ୍ବା କୌଣସି ଗୋପନୀୟ ବ୍ୟାଙ୍କିଙ୍ଗ୍ ବିବରଣୀ କାହା ସହିତ ସେୟାର କରନ୍ତୁ ନାହିଁ। ବ୍ୟାଙ୍କ କେବେବି ଏହି ସୂଚନା ମାଗେ ନାହିଁ।"
+    },
+    "support": {
+      "title": "ସହାୟତା ଏବଂ ଯୋଗାଯୋଗ ସୂଚନା",
+      "helpline": "ଗ୍ରାହକ ସେବା ହେଲ୍ପଲାଇନ"
+    },
+    "summary": "ସାରାଂଶ",
+    "dashboardMetrics": "ଡ୍ୟାସବୋର୍ଡ ମେଟ୍ରିକ୍ସ"
   },
   "currency": {
     "inr": "INR"
