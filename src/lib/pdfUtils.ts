@@ -6,7 +6,6 @@ import type { LoanDetails } from './loanUtils';
 import type { DetailedApplicationData, LoanTypeId } from '@/types';
 import { BANKS_DATA, LOAN_TYPES } from '@/lib/data';
 import { calculateLoanDetails } from './loanUtils';
-import { RobotoRegular } from '@/assets/fonts/Roboto-Regular-normal';
 
 type LoanReportData = (LoanDetails & { loanAmount: number; interestRate: number; loanTenureMonths: number; loanType?: LoanTypeId; }) | null;
 
@@ -15,11 +14,6 @@ const HEADER_COLOR = '#2F4F4F';
 const TEXT_COLOR = '#333333';
 const BORDER_COLOR = '#CCCCCC';
 
-// This function will be used as a hook in autoTable to ensure every cell uses the safe font.
-const forceCustomFontHook = (data: any) => {
-  // Set font for all cells in the table to Roboto. This is critical.
-  data.doc.setFont('Roboto', 'normal');
-};
 
 const createSampleLoanData = (i18n: I18nContextType): NonNullable<LoanReportData> => {
     const details = calculateLoanDetails(500000, 8.5, 60);
@@ -62,11 +56,9 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   const doc = new jsPDF({ orientation: 'p', unit: 'mm', format: 'a4' });
   
   // --- FONT SETUP ---
-  doc.addFileToVFS("Roboto-Regular.ttf", RobotoRegular);
-  doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
-  
-  // Set Roboto as the universal font for the entire document.
-  doc.setFont("Roboto", "normal");
+  // Use a standard, built-in font to avoid base64 decoding issues.
+  const FONT_FAMILY = "Helvetica";
+  doc.setFont(FONT_FAMILY, "normal");
 
   doc.setProperties({
     title: t('appName') + ' Loan Report'
@@ -83,13 +75,12 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
     for (let i = 1; i <= pageCount; i++) {
       docInstance.setPage(i);
       
-      // All text must use the embedded font to avoid garbage values
-      docInstance.setFont('Roboto', 'normal');
+      docInstance.setFont(FONT_FAMILY, "normal");
       docInstance.setFontSize(18);
       docInstance.setTextColor(PRIMARY_COLOR);
       docInstance.text(t('appName'), 15, 20);
 
-      docInstance.setFont('Roboto', 'normal');
+      docInstance.setFont(FONT_FAMILY, "normal");
       docInstance.setFontSize(10);
       docInstance.setTextColor(150);
       docInstance.text(`${t('pdf.reportGenerated')}: ${formatDate(new Date())}`, pageWidth - 15, 15, { align: 'right' });
@@ -98,7 +89,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
       docInstance.setDrawColor(BORDER_COLOR);
       docInstance.line(15, 25, pageWidth - 15, 25);
 
-      docInstance.setFont('Roboto', 'normal');
+      docInstance.setFont(FONT_FAMILY, "normal");
       docInstance.setFontSize(8);
       docInstance.setTextColor(150);
       const footerText = `${t('footer.copyRight', { year: new Date().getFullYear().toString() })}`;
@@ -107,7 +98,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   };
 
   const addSectionTitle = (docInstance: jsPDF, title: string, y: number) => {
-    docInstance.setFont('Roboto', 'normal');
+    docInstance.setFont(FONT_FAMILY, "normal");
     docInstance.setFontSize(14);
     docInstance.setTextColor(HEADER_COLOR);
     docInstance.text(title, 15, y);
@@ -122,9 +113,8 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
         startY: y,
         theme: 'plain',
         body: Object.entries(data).map(([key, value]) => [key, value || t('N/A')]),
-        styles: { fontSize: 9, cellPadding: 1.5, textColor: TEXT_COLOR, font: 'Roboto', fontStyle: 'normal' },
+        styles: { fontSize: 9, cellPadding: 1.5, textColor: TEXT_COLOR, font: FONT_FAMILY, fontStyle: 'normal' },
         columnStyles: { 0: { fontStyle: 'bold' } },
-        didParseCell: forceCustomFontHook
     });
     return (docInstance as any).lastAutoTable.finalY;
   }
@@ -179,11 +169,10 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   (doc as any).autoTable({
     startY: finalY,
     theme: 'grid',
-    styles: { fontSize: 10, cellPadding: 3, textColor: TEXT_COLOR, lineWidth: 0.1, lineColor: BORDER_COLOR, font: 'Roboto', fontStyle: 'normal' },
+    styles: { fontSize: 10, cellPadding: 3, textColor: TEXT_COLOR, lineWidth: 0.1, lineColor: BORDER_COLOR, font: FONT_FAMILY, fontStyle: 'normal' },
     headStyles: { fontStyle: 'bold', fillColor: '#F5F5F5', textColor: HEADER_COLOR  },
     body: keyFactsBody,
     columnStyles: { 0: { fontStyle: 'bold' } },
-    didParseCell: forceCustomFontHook
   });
   finalY = (doc as any).lastAutoTable.finalY + 15;
 
@@ -215,15 +204,14 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   (doc as any).autoTable({
     startY: finalY,
     theme: 'striped',
-    headStyles: { fillColor: HEADER_COLOR, textColor: 255, fontSize: 10, cellPadding: 2, font: 'Roboto', fontStyle: 'bold' },
-    bodyStyles: { fontSize: 9, cellPadding: 2, font: 'Roboto', fontStyle: 'normal' },
+    headStyles: { fillColor: HEADER_COLOR, textColor: 255, fontSize: 10, cellPadding: 2, font: FONT_FAMILY, fontStyle: 'bold' },
+    bodyStyles: { fontSize: 9, cellPadding: 2, font: FONT_FAMILY, fontStyle: 'normal' },
     head: [[ t('liveMarketAnalysis.bank'), t('liveMarketAnalysis.interestRate'), t('liveMarketAnalysis.estMonthlyEMI')]],
     body: comparisonProducts.map(p => [
       p.bankName,
       `${p.interestRate.toFixed(2)}%`,
       formatPdfNumber(p.emi, true)
     ]),
-    didParseCell: forceCustomFontHook
   });
   finalY = (doc as any).lastAutoTable.finalY + 15;
 
@@ -265,8 +253,8 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   (doc as any).autoTable({
     startY: finalY,
     theme: 'grid',
-    headStyles: { fillColor: HEADER_COLOR, textColor: 255, fontSize: 10, cellPadding: 2, font: 'Roboto', fontStyle: 'bold' },
-    bodyStyles: { fontSize: 9, cellPadding: 2, font: 'Roboto', fontStyle: 'normal' },
+    headStyles: { fillColor: HEADER_COLOR, textColor: 255, fontSize: 10, cellPadding: 2, font: FONT_FAMILY, fontStyle: 'bold' },
+    bodyStyles: { fontSize: 9, cellPadding: 2, font: FONT_FAMILY, fontStyle: 'normal' },
     head: [[
       t('pdf.paymentPlan.month'),
       t('pdf.paymentPlan.principal'),
@@ -274,7 +262,6 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
       t('pdf.paymentPlan.balance')
     ]],
     body: scheduleBody,
-    didParseCell: forceCustomFontHook,
     didDrawPage: (data: any) => { 
         if (data.pageNumber > 1) {
             finalY = 40;
@@ -293,7 +280,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
 
   // --- NEXT STEPS ---
   finalY = addSectionTitle(doc, t('pdf.nextSteps.title'), finalY);
-  doc.setFont('Roboto', 'normal');
+  doc.setFont(FONT_FAMILY, "normal");
   doc.setFontSize(9);
   doc.setTextColor(TEXT_COLOR);
   const nextStepsText = doc.splitTextToSize(`${t('pdf.nextSteps.contactBank')}\n\n${t('pdf.nextSteps.prepareDocuments')}`, pageWidth - 30);
@@ -301,7 +288,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   finalY += nextStepsText.length * 4 + 10;
 
   finalY = addSectionTitle(doc, t('pdf.disclaimers.title'), finalY);
-  doc.setFont('Roboto', 'normal');
+  doc.setFont(FONT_FAMILY, "normal");
   doc.setFontSize(9);
   doc.setTextColor(TEXT_COLOR);
   const disclaimerText = doc.splitTextToSize(`${t('pdf.disclaimers.discrepancy')}\n\n${t('pdf.disclaimers.fraudWarning')}`, pageWidth - 30);
@@ -313,10 +300,10 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
     finalY = 40;
   }
 
-  doc.setFont('Roboto', 'normal');
+  doc.setFont(FONT_FAMILY, "normal");
   doc.text(t('pdf.support.title'), 15, finalY);
   finalY += 5;
-  doc.setFont('Roboto', 'normal');
+  doc.setFont(FONT_FAMILY, "normal");
   doc.text(`${t('pdf.support.helpline')}: 1-800-LOAN-VIEW`, 15, finalY);
 
   // --- FINALIZATION ---
