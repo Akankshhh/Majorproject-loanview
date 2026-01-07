@@ -32,13 +32,12 @@ const createSampleLoanData = (): NonNullable<LoanReportData> => ({
   totalPayment: 615480,
 });
 
-// A simple number formatter for the PDF to avoid complex characters
-const formatPdfNumber = (value: number) => {
-  return value.toLocaleString('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-    useGrouping: true,
-  });
+// A simple, safe number formatter specifically for the PDF to avoid special characters.
+const formatPdfNumber = (value: number): string => {
+  if (typeof value !== 'number' || isNaN(value)) {
+    return '0.00';
+  }
+  return value.toFixed(2);
 };
 
 
