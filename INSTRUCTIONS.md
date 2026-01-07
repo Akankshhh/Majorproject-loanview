@@ -6,7 +6,7 @@ Follow these steps in your terminal, from the root directory of your project, to
 If you haven't done so already.
 
 ```bash
-git init -b main
+git init
 git add .
 git commit -m "Initial commit"
 ```
@@ -17,6 +17,9 @@ This connects your local project to the empty repository you created on GitHub a
 ```bash
 # Set the remote origin to your GitHub repository URL
 git remote add origin https://github.com/monkeyDluffitaro/loan-disbursal-system.git
+
+# Rename your primary branch to 'main'
+git branch -M main
 
 # Push your 'main' branch to the remote origin
 git push -u origin main
