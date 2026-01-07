@@ -34,15 +34,24 @@ const createSampleLoanData = (): NonNullable<LoanReportData> => ({
 
 // A simple, safe number formatter specifically for the PDF to avoid special characters.
 const formatPdfNumber = (value: number | string | undefined, currency = false): string => {
-  if (value === undefined || value === null) return 'N/A';
-  const num = Number(value);
-  if (isNaN(num)) {
-    // If it's a string that's not a number (e.g., from form input), return it as is.
-    return String(value);
-  }
-  // Converts number to a plain string with 2 decimal places, no currency symbols or commas.
-  const fixedValue = num.toFixed(2);
-  return currency ? `INR ${fixedValue}` : fixedValue;
+    if (value === undefined || value === null || value === '') return 'N/A';
+    
+    // Attempt to convert to a number, handling potential non-numeric strings gracefully
+    const num = Number(String(value).replace(/[^0-9.]/g, ''));
+    
+    if (isNaN(num)) {
+        // If it's a string that's not a number (e.g., from form input), return it as is.
+        return String(value);
+    }
+  
+    // Converts number to a plain string with up to 2 decimal places, no currency symbols or commas.
+    const fixedValue = num.toLocaleString('en-US', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2,
+        useGrouping: false // This is important, it prevents commas
+    });
+    
+    return currency ? `INR ${fixedValue}` : fixedValue;
 };
 
 
@@ -140,7 +149,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
 
     const loanRequirements = {
       [t('applicationForm.sections.loanRequirement.purpose')]: applicationData.loanRequirement.purpose,
-      [t('applicationForm.sections.loanRequirement.amount')]: formatPdfNumber(Number(applicationData.loanRequirement.amount), true),
+      [t('applicationForm.sections.loanRequirement.amount')]: formatPdfNumber(applicationData.loanRequirement.amount, true),
       [t('applicationForm.sections.loanRequirement.repaymentPeriod')]: applicationData.loanRequirement.repaymentPeriod,
       [t('applicationForm.sections.loanRequirement.loanType')]: applicationData.loanRequirement.loanType,
     };
@@ -311,5 +320,3 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   const filename = `${t('appName')}_Report_${formatDate(new Date(), { year: 'numeric', month: '2-digit', day: '2-digit' })}.pdf`.replace(/[^a-zA-Z0-9_.-]/g, '_');
   doc.save(filename);
 };
-
-  

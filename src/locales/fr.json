@@ -45,7 +45,7 @@
         "allBankCategories": "Toutes les Catégories",
         "publicSector": "Secteur Public",
         "privateSector": "Secteur Privé",
-        "smallFinanceBank": "Banque de Petite Finance",
+        "smallFinanceBank": "Petite Banque de Financement",
         "paymentBank": "Banque de Paiement",
         "nbfc": "NBFC",
         "foreignBank": "Banque Étrangère"
@@ -98,14 +98,14 @@
     "loanType": "Type de Prêt",
     "interestRate": "Taux d'Intérêt (p.a.)",
     "estMonthlyEMI": "EMI Mensuel Est.",
-    "whyChooseThis": "Pourquoi Choisir Ceci?",
+    "whyChooseThis": "Pourquoi Choisir Ceci ?",
     "action": "Action",
-    "applyNow": "Appliquer Maintenant"
+    "applyNow": "Postuler Maintenant"
   },
   "loanTypes": {
     "home": {
       "name": "Prêt Immobilier",
-      "description": "Financez la maison de vos rêves à des taux compétitifs.",
+      "description": "Financez la maison de vos rêves avec des taux compétitifs.",
       "processingFee": "Jusqu'à 1% du montant du prêt"
     },
     "personal": {
@@ -180,8 +180,8 @@
       "submitting": "Soumission en cours...",
       "loading": "Chargement des détails..."
     },
-    "applicationSubmitted": "Demande Soumise!",
-    "applicationSubmittedDesc": "Votre demande de prêt a été soumise avec succès. Nous vous contacterons bientôt."
+    "applicationSubmitted": "Demande Soumise !",
+    "applicationSubmittedDesc": "Votre demande de prêt a été soumise avec succès. Nous vous contacterons sous peu."
   },
   "applicationForm": {
     "title": "Formulaire de Demande de Prêt",
@@ -199,7 +199,7 @@
         "currentAddress": "Adresse Actuelle",
         "permanentAddress": "Adresse Permanente",
         "phone": "Numéro de Téléphone",
-        "email": "Email",
+        "email": "E-mail",
         "photo": "Photo (Télécharger)",
         "idNumber": "Numéro Aadhaar / Carte d'Électeur / PAN"
       },
@@ -224,26 +224,26 @@
     "loanAmount": "Montant du Prêt",
     "loanTenure": "Durée du Prêt (Mois)",
     "monthlyEMI": "EMI Mensuelle",
-    "enterAllDetails": "Veuillez entrer le Montant du Prêt, la Durée et sélectionner/entrer un Taux d'Intérêt.",
-    "clickToCalculateEMI": "Cliquez sur 'Calculer & Sauvegarder' pour voir le paiement mensuel et sauvegarder pour votre rapport.",
+    "enterAllDetails": "Veuillez saisir le Montant du Prêt, la Durée et sélectionner/saisir un Taux d'Intérêt.",
+    "clickToCalculateEMI": "Cliquez sur 'Calculer' pour voir le paiement mensuel et sauvegarder pour votre rapport.",
     "usingSelectedRate": "Utilisation du taux du type de prêt sélectionné : {{rate}}%",
-    "selectOrEnterRate": "Sélectionnez un type de prêt dans le tableau ci-dessus ou entrez manuellement un taux d'intérêt.",
+    "selectOrEnterRate": "Sélectionnez un type de prêt dans le tableau ci-dessus ou saisissez manuellement un taux d'intérêt.",
     "calculateEMIButton": "Calculer & Sauvegarder pour le Rapport",
     "calculationSavedTitle": "Calcul Sauvegardé",
     "calculationSavedDesc": "Les détails de votre calcul d'EMI ont été sauvegardés pour le rapport PDF.",
     "emiDetails": "Résumé du Remboursement",
     "loanRepaymentBreakdown": "Détail du Remboursement du Prêt",
-    "principalAmount": "Montant du Principal",
+    "principalAmount": "Montant Principal",
     "totalInterest": "Intérêt Total",
     "totalPayment": "Paiement Total"
   },
   "emiCalculator": {
     "title": "Calculateur d'EMI",
     "calculatorTitle": "Calculateur de Remboursement de Prêt",
-    "calculatorDescription": "Entrez les détails de votre prêt pour calculer votre paiement mensuel et voir un échéancier d'amortissement complet.",
+    "calculatorDescription": "Entrez les détails de votre prêt pour calculer votre mensualité et voir un échéancier d'amortissement complet.",
     "tenureInYears": "Durée (Années)",
     "emiOptionsTitle": "Options d'EMI pour Différentes Durées",
-    "emiOptionsDescription": "Basé sur un montant de prêt de {{amount}} à {{rate}}% d'intérêt.",
+    "emiOptionsDescription": "Basé sur un montant de prêt de {{amount}} à un taux d'intérêt de {{rate}}%.",
     "amortizationDescription": "Ce tableau montre la répartition de chaque paiement mensuel en principal et intérêts sur toute la durée du prêt."
   },
   "viewApplications": {
@@ -255,8 +255,8 @@
     "saveSuccess": "Votre demande a été enregistrée sur votre profil et peut être consultée sur cette page.",
     "submitAnother": "Soumettre une Autre Demande",
     "clearAll": "Effacer Toutes les Demandes",
-    "confirmClearAll": "Êtes-vous sûr de vouloir supprimer toutes les demandes enregistrées? Cette action est irréversible.",
-    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette demande?",
+    "confirmClearAll": "Êtes-vous sûr de vouloir supprimer toutes les demandes enregistrées ? Cette action ne peut pas être annulée.",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer cette demande ?",
     "deleteSuccess": "Demande supprimée avec succès.",
     "deleteError": "Échec de la suppression de la demande."
   },
@@ -269,15 +269,13 @@
   "reportPage": {
     "title": "Télécharger le Rapport de Prêt",
     "generateTitle": "Générer le Rapport de Prêt",
-    "description": "Générez un rapport PDF basé sur les données de votre prêt calculé depuis la page 'Comparer & Calculer' et votre dernière demande détaillée.",
-    "infoText_v1": "Le rapport utilisera les détails du prêt que vous avez calculés en dernier sur la page 'Comparer & Calculer'.",
-    "infoText_v2": "Aucune donnée de prêt calculée pour le moment. Veuillez aller à la page 'Comparer & Calculer' pour calculer votre EMI. Le rapport sera généré avec des données d'exemple.",
-    "infoText_v3_application": "Il inclura également les détails de votre dernière demande détaillée enregistrée.",
+    "description": "Générez un rapport PDF basé sur les données de votre prêt calculées sur la page 'Comparer & Calculer' et votre dernière demande détaillée.",
+    "infoText_v1": "Le rapport utilisera les détails du prêt que vous avez calculés pour la dernière fois sur la page 'Comparer & Calculer'.",
+    "infoText_v2": "Aucune donnée de prêt n'a encore été calculée. Veuillez vous rendre sur la page 'Comparer & Calculer' pour calculer votre EMI. Le rapport sera généré avec des données d'exemple.",
+    "infoText_v3_application": "Il inclura également les détails de votre demande détaillée la plus récemment enregistrée.",
     "infoText_v3_no_application": "Aucune demande détaillée n'a encore été enregistrée. Vous pouvez en enregistrer une depuis la page 'Demander un Prêt'.",
     "downloadButton_v1": "Télécharger Votre Rapport de Prêt",
-    "downloadButton_v2": "Télécharger un Rapport d'Exemple",
-    "imageAlt": "Représentation stylisée d'un rapport financier",
-    "imageCaption": "Vos données de prêt complètes, résumées."
+    "downloadButton_v2": "Télécharger le Rapport d'Exemple"
   },
   "footer": {
     "copyRight": "© {{year}} LoanView. Tous droits réservés."
@@ -289,23 +287,23 @@
     "minLength": "Doit comporter au moins {{length}} caractères."
   },
   "login": {
-    "title": "Connectez-vous à votre compte",
+    "title": "Connectez-vous à votre Compte",
     "description": "Entrez vos identifiants pour accéder à votre tableau de bord.",
     "emailLabel": "E-mail",
     "passwordLabel": "Mot de passe",
-    "signInButton": "Se connecter",
-    "signOutButton": "Se déconnecter",
-    "signingIn": "Connexion en cours...",
-    "signInSuccessTitle": "Connexion réussie",
-    "signInSuccessDesc": "Bienvenue! Redirection vers le tableau de bord.",
-    "signInFailed": "Échec de la connexion",
+    "signInButton": "Se Connecter",
+    "signOutButton": "Se Déconnecter",
+    "signingIn": "Connexion...",
+    "signInSuccessTitle": "Connexion Réussie",
+    "signInSuccessDesc": "Bon retour ! Redirection vers votre tableau de bord.",
+    "signInFailed": "Échec de la Connexion",
     "signUp": "S'inscrire",
-    "createAccount": "Créer un compte",
+    "createAccount": "Créer un Compte",
     "signUpDescription": "Entrez vos informations pour créer un nouveau compte.",
-    "signUpSuccess": "Compte créé !",
-    "signUpSuccessDesc": "Vous avez été inscrit et connecté avec succès.",
-    "signUpFailed": "Échec de l'inscription",
-    "creatingAccount": "Création du compte en cours..."
+    "signUpSuccess": "Compte Créé !",
+    "signUpSuccessDesc": "Vous vous êtes inscrit et connecté avec succès.",
+    "signUpFailed": "Échec de l'Inscription",
+    "creatingAccount": "Création du compte..."
   },
   "profilePage": {
     "title": "Profil Utilisateur",
@@ -322,7 +320,7 @@
   },
   "pdf": {
     "loadingReport": "Chargement des données du rapport...",
-    "reportGenerated": "Rapport généré le",
+    "reportGenerated": "Rapport Généré le",
     "page": "Page",
     "years": "Années",
     "applicationSummary": {
@@ -354,7 +352,7 @@
     "nextSteps": {
       "title": "Prochaines Étapes & Recommandations",
       "contactBank": "1. Contactez les banques avec les taux les plus avantageux de la section 'Comparaison du Marché' pour confirmer leurs offres.",
-      "prepareDocuments": "2. Préparez les documents nécessaires tels que la preuve d'identité, la preuve d'adresse et les relevés de revenus pour un processus de demande plus rapide."
+      "prepareDocuments": "2. Préparez les documents nécessaires tels que preuve d'identité, preuve de domicile et relevés de revenus pour un processus de demande plus rapide."
     },
     "disclaimers": {
       "title": "Avis de Non-responsabilité et Alertes",
@@ -364,11 +362,10 @@
     "support": {
       "title": "Support & Informations de Contact",
       "helpline": "Ligne d'Assistance Clientèle"
-    },
-    "summary": "Résumé",
-    "dashboardMetrics": "Indicateurs du Tableau de Bord"
+    }
   },
   "currency": {
     "inr": "INR"
-  }
+  },
+  "N/A": "N/A"
 }

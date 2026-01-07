@@ -4,9 +4,15 @@
   "nav": {
     "dashboard": "Dashboard",
     "applyLoan": "Kredit Beantragen",
-    "compareLoans": "Kredite Vergleichen",
+    "compareAndCalculate": "Vergleichen & Berechnen",
+    "marketComparison": "Marktvergleich",
     "interestRates": "Zinssätze",
+    "emiCalculator": "EMI-Rechner",
     "downloadReport": "Bericht Herunterladen",
+    "viewApplications": "Anträge Anzeigen",
+    "bankingAdvisor": "KI-Bankberater",
+    "login": "Anmelden",
+    "profile": "Profil",
     "howToPlay": "Spielanleitung"
   },
   "dashboard": {
@@ -14,18 +20,6 @@
     "totalLoans": "Gesamtkredite",
     "avgLoanSize": "Ø Kreditgröße (INR)",
     "approvalRate": "Genehmigungsrate",
-    "aiSuggestions": {
-      "title": "KI-gestützte Lokalisierungseinblicke",
-      "description": "Geben Sie eine Zielgruppe ein, um kulturell relevante Visualisierungs- und Interpretationsvorschläge für die Kreditdaten zu erhalten.",
-      "demographicLabel": "Zielgruppe",
-      "demographicPlaceholder": "z.B. Junge Berufstätige im städtischen Raum",
-      "getSuggestions": "Vorschläge Erhalten",
-      "visualizationSuggestion": "Visualisierungsvorschlag",
-      "interpretationSuggestion": "Interpretationsvorschlag",
-      "noSuggestions": "Geben Sie eine Zielgruppe ein und klicken Sie auf 'Vorschläge Erhalten', um KI-Einblicke zu sehen.",
-      "loadingSuggestions": "Vorschläge werden geladen...",
-      "errorSuggestions": "Vorschläge konnten nicht abgerufen werden. Bitte versuchen Sie es erneut."
-    },
     "recentActivity": "Letzte Aktivität",
     "noRecentActivity": "Keine aktuellen Aktivitäten zum Anzeigen.",
     "loanInterestRatesChart": {
@@ -38,7 +32,7 @@
       "bankName": "Name der Bank",
       "loanType": "Kreditart",
       "interestRate": "Zinssatz (%)",
-       "filters": {
+      "filters": {
         "searchPlaceholder": "Suche nach Bank oder Kreditart...",
         "selectBank": "Bank Auswählen",
         "allBanks": "Alle Banken",
@@ -63,7 +57,7 @@
         "processingFee": "Bearbeitungsgebühr: {{fee}}",
         "rateType": "Zinssatzart: {{type}}"
       },
-       "noResults": "Keine Kreditprodukte entsprechen Ihren aktuellen Filtern."
+      "noResults": "Keine Kreditprodukte entsprechen Ihren aktuellen Filtern."
     },
     "themeToggle": {
       "light": "Zum Hellen Modus wechseln",
@@ -82,12 +76,31 @@
       "noData": "Nicht genügend Daten für Statistiken."
     },
     "bankRatesComparisonChart": {
-      "title": "Bankzinsvergleich für ausgewählte Kreditart",
+      "title": "Visueller Vergleich",
       "description": "Wählen Sie eine Kreditart, um zu sehen, wie sich die Zinssätze verschiedener Banken vergleichen.",
       "selectLoanTypePlaceholder": "Wählen Sie eine Kreditart zum Vergleichen",
       "noData": "Für die ausgewählte Kreditart und Filter sind keine Daten verfügbar.",
       "yAxisLabel": "Zinssatz (%)"
     }
+  },
+  "marketComparison": {
+    "fullMarketComparison": "Vollständiger Marktvergleich",
+    "totalProducts": "Produkte Gesamt",
+    "avgInterestRate": "Durchschnittlicher Zinssatz",
+    "bankWithMostOfferings": "Bank mit den meisten Angeboten",
+    "description": "Ein vollständiger Überblick über jedes Kreditprodukt, das von unseren Partnerbanken angeboten wird. Sortieren Sie nach einer beliebigen Spalte, um die beste Option für Sie zu finden.",
+    "processingFee": "Bearbeitungsgebühr"
+  },
+  "liveMarketAnalysis": {
+    "title": "Marktvergleich",
+    "description": "Wählen Sie eine Kreditart aus, um Echtzeit-Angebote von führenden indischen Banken zu vergleichen.",
+    "bank": "Bank",
+    "loanType": "Kreditart",
+    "interestRate": "Zinssatz (p.a.)",
+    "estMonthlyEMI": "Geschätzte mtl. EMI",
+    "whyChooseThis": "Warum dies wählen?",
+    "action": "Aktion",
+    "applyNow": "Jetzt bewerben"
   },
   "loanTypes": {
     "home": {
@@ -103,7 +116,7 @@
     "education": {
       "name": "Bildungskredit",
       "description": "Investieren Sie in Ihre Zukunft mit unserer Bildungsfinanzierung.",
-       "processingFee": "Typischerweise 0,5-1%"
+      "processingFee": "Typischerweise 0,5-1%"
     },
     "vehicle": {
       "name": "Fahrzeugkredit",
@@ -125,6 +138,29 @@
       "floating": "Variabel"
     }
   },
+  "banks": {
+    "sbi": {
+      "reason": "Am besten für die niedrigsten Zinssätze und das Vertrauen der Regierung. Sonderkonditionen für weibliche Kreditnehmer."
+    },
+    "hdfc": {
+      "reason": "Am besten für die Geschwindigkeit. Digitale Genehmigung in 10 Minuten für vorab genehmigte Kunden. Minimale Dokumentation."
+    },
+    "icici": {
+      "reason": "Ausgezeichnete mobile App-Oberfläche und flexible Laufzeitoptionen. Gut für Selbstständige."
+    },
+    "axis": {
+      "reason": "Bietet 'Urlaubszeitraum' (EMI-Verzicht) für bestimmte Produkte. Gut für diejenigen, die zukünftige Cashflows erwarten."
+    },
+    "pnb": {
+      "reason": "Starke ländliche Präsenz und spezielle Programme für Agrarkredite."
+    },
+    "kotak": {
+      "reason": "Wettbewerbsfähige Preise für Bewerber mit hoher Kreditwürdigkeit (750+). Personalisierter Service vor Ort."
+    },
+    "bob": {
+      "reason": "Gute Konditionen für Fahrzeugkredite und ein breites Filialnetz."
+    }
+  },
   "loanApplication": {
     "title": "Kreditantrag",
     "steps": {
@@ -136,30 +172,8 @@
     "next": "Weiter",
     "previous": "Zurück",
     "submit": "Antrag Absenden",
-    "selectLoanType": "Kreditart Auswählen",
-    "selectLoanTypePlaceholder": "Wählen Sie eine Kreditart...",
     "personalDetailsForm": {
-      "fullName": "Vollständiger Name",
-      "fullNamePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
-      "email": "E-Mail-Adresse",
-      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
-      "phone": "Telefonnummer",
-      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein"
-    },
-    "incomeDetailsForm": {
-      "monthlyIncome": "Monatliches Einkommen (INR)",
-      "monthlyIncomePlaceholderINR": "z.B. 50000",
-      "employmentStatus": "Beschäftigungsstatus",
-      "employmentStatusPlaceholder": "Wählen Sie den Beschäftigungsstatus",
-      "employed": "Angestellt",
-      "selfEmployed": "Selbstständig",
-      "unemployed": "Arbeitslos"
-    },
-    "documentUploadForm": {
-      "idProof": "Identitätsnachweis",
-      "addressProof": "Adressnachweis",
-      "uploadHint": "Klicken oder ziehen Sie eine Datei in diesen Bereich, um sie hochzuladen",
-      "notUploaded": "Nicht hochgeladen"
+      "fullNamePlaceholder": "Geben Sie Ihren vollständigen Namen ein"
     },
     "reviewSubmitForm": {
       "reviewDetails": "Bitte überprüfen Sie Ihre Antragsdetails vor dem Absenden.",
@@ -169,28 +183,82 @@
     "applicationSubmitted": "Antrag Gesendet!",
     "applicationSubmittedDesc": "Ihr Kreditantrag wurde erfolgreich übermittelt. Wir werden Sie in Kürze kontaktieren."
   },
+  "applicationForm": {
+    "title": "Kreditantragsformular",
+    "formTitle": "Details zum Kreditantrag",
+    "formDescription": "Bitte füllen Sie alle Abschnitte genau und vollständig aus.",
+    "submitButton": "Speichern & Antrag einreichen",
+    "sections": {
+      "personalDetails": {
+        "title": "1. Persönliche Angaben",
+        "fullName": "Vollständiger Name",
+        "fatherHusbandName": "Name des Vaters / Ehepartners",
+        "dob": "Geburtsdatum / Alter",
+        "gender": "Geschlecht",
+        "maritalStatus": "Familienstand",
+        "currentAddress": "Aktuelle Adresse",
+        "permanentAddress": "Ständige Adresse",
+        "phone": "Telefonnummer",
+        "email": "E-Mail",
+        "photo": "Foto (Hochladen)",
+        "idNumber": "Aadhaar / Wählerausweis / PAN-Nummer"
+      },
+      "loanRequirement": {
+        "title": "2. Kreditanforderung",
+        "purpose": "Zweck des Kredits",
+        "amount": "Benötigter Kreditbetrag",
+        "repaymentPeriod": "Bevorzugter Rückzahlungszeitraum",
+        "loanType": "Kreditart"
+      }
+    }
+  },
   "compareLoans": {
     "title": "Kreditoptionen Vergleichen",
     "loanTypeComparison": "Vergleich der Kreditarten",
     "loanType": "Kreditart",
     "interestRate": "Zinssatz",
-    "maxTenure": "Max. Laufzeit (Monate)",
+    "maxTenure": "Max. Laufzeit (Jahre)",
     "maxAmount": "Max. Betrag (INR)",
     "calculateEMI": "EMI Berechnen",
     "selectForEMI": "Für EMI-Berechnung Auswählen",
     "loanAmount": "Kreditbetrag",
     "loanTenure": "Kreditlaufzeit (Monate)",
-    "monthlyEMI": "Monatliche EMI: {{emi}}",
+    "monthlyEMI": "Monatliche EMI",
     "enterAllDetails": "Bitte geben Sie Kreditbetrag, Laufzeit ein und wählen/geben Sie einen Zinssatz ein.",
-    "clickToCalculateEMI": "Klicken Sie auf 'EMI Berechnen', um die monatliche Zahlung anzuzeigen.",
+    "clickToCalculateEMI": "Klicken Sie auf 'Berechnen', um die monatliche Zahlung zu sehen und für Ihren Bericht zu speichern.",
     "usingSelectedRate": "Verwendung des ausgewählten Kreditzinssatzes: {{rate}}%",
     "selectOrEnterRate": "Wählen Sie eine Kreditart aus der obigen Tabelle oder geben Sie einen Zinssatz manuell ein.",
-    "calculateEMIButton": "EMI Berechnen",
-    "emiDetails": "EMI-Details",
+    "calculateEMIButton": "Berechnen & für Bericht speichern",
+    "calculationSavedTitle": "Berechnung gespeichert",
+    "calculationSavedDesc": "Ihre EMI-Berechnungsdetails wurden für den PDF-Bericht gespeichert.",
+    "emiDetails": "Rückzahlungsübersicht",
     "loanRepaymentBreakdown": "Kreditrückzahlungsaufschlüsselung",
     "principalAmount": "Hauptbetrag",
     "totalInterest": "Gesamtzinsen",
     "totalPayment": "Gesamtzahlung"
+  },
+  "emiCalculator": {
+    "title": "EMI-Rechner",
+    "calculatorTitle": "Kreditrückzahlungsrechner",
+    "calculatorDescription": "Geben Sie Ihre Kreditdetails ein, um Ihre monatliche Rate zu berechnen und einen vollständigen Tilgungsplan anzuzeigen.",
+    "tenureInYears": "Laufzeit (Jahre)",
+    "emiOptionsTitle": "EMI-Optionen für verschiedene Laufzeiten",
+    "emiOptionsDescription": "Basierend auf einem Kreditbetrag von {{amount}} zu einem Zinssatz von {{rate}}%.",
+    "amortizationDescription": "Diese Tabelle zeigt die Aufschlüsselung jeder monatlichen Zahlung in Tilgung und Zinsen über die gesamte Kreditlaufzeit."
+  },
+  "viewApplications": {
+    "noApplicationsTitle": "Keine gespeicherten Anträge",
+    "noApplicationsDesc": "Vom Formular 'Kredit beantragen' eingereichte Anträge werden hier angezeigt.",
+    "submittedOn": "Eingereicht am",
+    "purpose": "Zweck",
+    "delete": "Löschen",
+    "saveSuccess": "Ihr Antrag wurde in Ihrem Profil gespeichert und kann auf dieser Seite eingesehen werden.",
+    "submitAnother": "Weiteren Antrag einreichen",
+    "clearAll": "Alle Anträge löschen",
+    "confirmClearAll": "Sind Sie sicher, dass Sie alle gespeicherten Anträge löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "confirmDelete": "Sind Sie sicher, dass Sie diesen Antrag löschen möchten?",
+    "deleteSuccess": "Antrag erfolgreich gelöscht.",
+    "deleteError": "Fehler beim Löschen des Antrags."
   },
   "interestRatesPage": {
     "title": "Aktuelle Zinssätze",
@@ -199,13 +267,15 @@
     "updatedOn": "Zinsen aktualisiert am {{date}}"
   },
   "reportPage": {
-    "title": "Dashboard-Bericht Herunterladen",
-    "generateTitle": "PDF-Zusammenfassung Erstellen",
-    "description": "Klicken Sie auf die Schaltfläche unten, um eine PDF-Zusammenfassung der aktuellen Dashboard-Daten zu erstellen und herunterzuladen.",
-    "infoText": "Das PDF enthält Kennzahlen, Zinssätze nach Kreditart und bankenspezifische Kreditangebote.",
-    "downloadButton": "PDF Erstellen und Herunterladen",
-    "imageAlt": "Stilisierte Darstellung eines Finanzberichts",
-    "imageCaption": "Ihre umfassenden Kreditdaten, zusammengefasst."
+    "title": "Kreditbericht Herunterladen",
+    "generateTitle": "Kreditbericht Erstellen",
+    "description": "Erstellen Sie einen PDF-Bericht basierend auf Ihren berechneten Kreditdaten von der Seite 'Vergleichen & Berechnen' und Ihrer letzten detaillierten Bewerbung.",
+    "infoText_v1": "Der Bericht verwendet die Kreditdetails, die Sie zuletzt auf der Seite 'Vergleichen & Berechnen' berechnet haben.",
+    "infoText_v2": "Noch keine Kreditdaten berechnet. Bitte gehen Sie zur Seite 'Vergleichen & Berechnen', um Ihre EMI zu berechnen. Der Bericht wird mit Beispieldaten erstellt.",
+    "infoText_v3_application": "Es werden auch Details aus Ihrer zuletzt gespeicherten detaillierten Bewerbung enthalten sein.",
+    "infoText_v3_no_application": "Es wurde noch keine detaillierte Bewerbung gespeichert. Sie können eine von der Seite 'Kredit beantragen' speichern.",
+    "downloadButton_v1": "Ihren Kreditbericht herunterladen",
+    "downloadButton_v2": "Beispielbericht herunterladen"
   },
   "footer": {
     "copyRight": "© {{year}} LoanView. Alle Rechte vorbehalten."
@@ -213,9 +283,43 @@
   "formValidation": {
     "required": "Dieses Feld ist erforderlich.",
     "invalidEmail": "Ungültige E-Mail-Adresse.",
-    "positiveNumber": "Muss eine positive Zahl sein."
+    "positiveNumber": "Muss eine positive Zahl sein.",
+    "minLength": "Muss mindestens {{length}} Zeichen lang sein."
+  },
+  "login": {
+    "title": "Melden Sie sich bei Ihrem Konto an",
+    "description": "Geben Sie Ihre Anmeldeinformationen ein, um auf Ihr Dashboard zuzugreifen.",
+    "emailLabel": "E-Mail",
+    "passwordLabel": "Passwort",
+    "signInButton": "Anmelden",
+    "signOutButton": "Abmelden",
+    "signingIn": "Anmelden...",
+    "signInSuccessTitle": "Anmeldung erfolgreich",
+    "signInSuccessDesc": "Willkommen zurück! Sie werden zum Dashboard weitergeleitet.",
+    "signInFailed": "Anmeldung fehlgeschlagen",
+    "signUp": "Registrieren",
+    "createAccount": "Konto erstellen",
+    "signUpDescription": "Geben Sie Ihre Daten ein, um ein neues Konto zu erstellen.",
+    "signUpSuccess": "Konto erstellt!",
+    "signUpSuccessDesc": "Sie haben sich erfolgreich registriert und angemeldet.",
+    "signUpFailed": "Registrierung fehlgeschlagen",
+    "creatingAccount": "Konto wird erstellt..."
+  },
+  "profilePage": {
+    "title": "Benutzerprofil",
+    "description": "Ihre Profilinformationen anzeigen und verwalten.",
+    "updateSuccess": "Profil erfolgreich aktualisiert!",
+    "updateError": "Profil konnte nicht aktualisiert werden.",
+    "personalInfo": "Persönliche Informationen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "phoneNumber": "Telefonnummer",
+    "address": "Adresse",
+    "saveChanges": "Änderungen Speichern",
+    "saving": "Speichern..."
   },
   "pdf": {
+    "loadingReport": "Berichtsdaten werden geladen...",
     "reportGenerated": "Bericht erstellt am",
     "page": "Seite",
     "years": "Jahre",
@@ -230,20 +334,25 @@
     },
     "loanSummary": {
       "loanAmount": "Kreditbetrag",
-      "principalAmount": "Kapitalbetrag",
+      "principalAmount": "Hauptbetrag",
       "interestRate": "Jährlicher Zinssatz",
       "tenure": "Laufzeit",
       "monthlyEMI": "Monatliche EMI",
       "totalInterest": "Gesamte zu zahlende Zinsen",
-      "totalPayment": "Gesamtzahlung (Kapital + Zinsen)"
+      "totalPayment": "Gesamtzahlung (Hauptbetrag + Zinsen)"
     },
     "paymentPlan": {
       "title": "Zahlungsplan (Tilgungsplan)",
       "month": "Monat #",
-      "principal": "Kapital",
+      "principal": "Tilgung",
       "interest": "Zinsen",
       "totalPayment": "Gesamtzahlung",
       "balance": "Restbetrag"
+    },
+    "nextSteps": {
+      "title": "Nächste Schritte & Empfehlungen",
+      "contactBank": "1. Kontaktieren Sie die Banken mit den günstigsten Zinssätzen aus dem Abschnitt 'Marktvergleich', um deren Angebote zu bestätigen.",
+      "prepareDocuments": "2. Bereiten Sie die erforderlichen Dokumente wie Identitätsnachweis, Adressnachweis und Einkommensnachweise für einen schnelleren Antragsprozess vor."
     },
     "disclaimers": {
       "title": "Haftungsausschlüsse und Warnungen",
@@ -253,12 +362,10 @@
     "support": {
       "title": "Support & Kontaktinformationen",
       "helpline": "Kunden-Support-Hotline"
-    },
-    "summary": "Zusammenfassung",
-    "dashboardMetrics": "Dashboard-Metriken"
+    }
   },
   "currency": {
     "inr": "INR"
   },
-  "N/A": "N/V"
+  "N/A": "N/A"
 }

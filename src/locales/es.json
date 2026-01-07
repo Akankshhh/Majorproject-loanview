@@ -4,9 +4,15 @@
   "nav": {
     "dashboard": "Tablero",
     "applyLoan": "Solicitar Préstamo",
-    "compareLoans": "Comparar Préstamos",
+    "compareAndCalculate": "Comparar y Calcular",
+    "marketComparison": "Comparación de Mercado",
     "interestRates": "Tasas de Interés",
+    "emiCalculator": "Calculadora de EMI",
     "downloadReport": "Descargar Informe",
+    "viewApplications": "Ver Solicitudes",
+    "bankingAdvisor": "Asesor Bancario IA",
+    "login": "Iniciar Sesión",
+    "profile": "Perfil",
     "howToPlay": "Cómo Jugar"
   },
   "dashboard": {
@@ -14,18 +20,6 @@
     "totalLoans": "Préstamos Totales",
     "avgLoanSize": "Tamaño Promedio Préstamo (INR)",
     "approvalRate": "Tasa de Aprobación",
-    "aiSuggestions": {
-      "title": "Perspectivas de Localización con IA",
-      "description": "Ingrese un grupo demográfico objetivo para obtener visualizaciones culturalmente relevantes y sugerencias de interpretación para los datos del préstamo.",
-      "demographicLabel": "Grupo Demográfico Objetivo",
-      "demographicPlaceholder": "Ej: Jóvenes Profesionales en Área Urbana",
-      "getSuggestions": "Obtener Sugerencias",
-      "visualizationSuggestion": "Sugerencia de Visualización",
-      "interpretationSuggestion": "Sugerencia de Interpretación",
-      "noSuggestions": "Ingrese un grupo demográfico y haga clic en 'Obtener Sugerencias' para ver las perspectivas de IA.",
-      "loadingSuggestions": "Cargando sugerencias...",
-      "errorSuggestions": "No se pudieron obtener las sugerencias. Inténtalo de nuevo."
-    },
     "recentActivity": "Actividad Reciente",
     "noRecentActivity": "No hay actividad reciente para mostrar.",
     "loanInterestRatesChart": {
@@ -82,12 +76,31 @@
       "noData": "No hay suficientes datos para estadísticas."
     },
     "bankRatesComparisonChart": {
-      "title": "Comparación de Tasas Bancarias para el Tipo de Préstamo Seleccionado",
+      "title": "Comparación Visual",
       "description": "Seleccione un tipo de préstamo para ver cómo se comparan las tasas de interés entre diferentes bancos.",
       "selectLoanTypePlaceholder": "Seleccione un Tipo de Préstamo para Comparar",
       "noData": "No hay datos disponibles para el tipo de préstamo y filtros seleccionados.",
       "yAxisLabel": "Tasa de Interés (%)"
     }
+  },
+  "marketComparison": {
+    "fullMarketComparison": "Comparación Completa del Mercado",
+    "totalProducts": "Productos Totales",
+    "avgInterestRate": "Tasa de Interés Promedio",
+    "bankWithMostOfferings": "Banco con Más Ofertas",
+    "description": "Una descripción completa de cada producto de préstamo ofrecido por nuestros bancos asociados. Ordene por cualquier columna para encontrar la mejor opción para usted.",
+    "processingFee": "Comisión de Tramitación"
+  },
+  "liveMarketAnalysis": {
+    "title": "Comparación de Mercado",
+    "description": "Seleccione un tipo de préstamo para comparar ofertas en tiempo real de los principales bancos de la India.",
+    "bank": "Banco",
+    "loanType": "Tipo de Préstamo",
+    "interestRate": "Tasa de Interés (p.a.)",
+    "estMonthlyEMI": "EMI Mensual Est.",
+    "whyChooseThis": "¿Por Qué Elegir Esto?",
+    "action": "Acción",
+    "applyNow": "Aplicar Ahora"
   },
   "loanTypes": {
     "home": {
@@ -125,6 +138,29 @@
       "floating": "Flotante"
     }
   },
+  "banks": {
+    "sbi": {
+      "reason": "Mejor por las tasas de interés más bajas y la confianza del gobierno. Concesiones especiales para prestatarias."
+    },
+    "hdfc": {
+      "reason": "Mejor por la velocidad. Aprobación digital en 10 minutos para clientes preaprobados. Documentación mínima."
+    },
+    "icici": {
+      "reason": "Excelente interfaz de aplicación móvil y opciones de plazo flexibles. Bueno para trabajadores autónomos."
+    },
+    "axis": {
+      "reason": "Ofrece 'Período de Vacaciones' (exenciones de EMI) en productos específicos. Bueno para aquellos que esperan un flujo de caja futuro."
+    },
+    "pnb": {
+      "reason": "Fuerte presencia rural y esquemas especiales para préstamos agrícolas."
+    },
+    "kotak": {
+      "reason": "Tasas competitivas para solicitantes con alto puntaje de crédito (750+). Servicio personalizado a domicilio."
+    },
+    "bob": {
+      "reason": "Buenas tasas para préstamos de vehículos y una amplia red de sucursales."
+    }
+  },
   "loanApplication": {
     "title": "Solicitud de Préstamo",
     "steps": {
@@ -136,61 +172,93 @@
     "next": "Siguiente",
     "previous": "Anterior",
     "submit": "Enviar Solicitud",
-    "selectLoanType": "Seleccionar Tipo de Préstamo",
-    "selectLoanTypePlaceholder": "Elija un tipo de préstamo...",
     "personalDetailsForm": {
-      "fullName": "Nombre Completo",
-      "fullNamePlaceholder": "Ingrese su nombre completo",
-      "email": "Correo Electrónico",
-      "emailPlaceholder": "Ingrese su correo electrónico",
-      "phone": "Número de Teléfono",
-      "phonePlaceholder": "Ingrese su número de teléfono"
-    },
-    "incomeDetailsForm": {
-      "monthlyIncome": "Ingreso Mensual (INR)",
-      "monthlyIncomePlaceholderINR": "Ej: 50000",
-      "employmentStatus": "Estado Laboral",
-      "employmentStatusPlaceholder": "Seleccione estado laboral",
-      "employed": "Empleado",
-      "selfEmployed": "Autónomo",
-      "unemployed": "Desempleado"
-    },
-    "documentUploadForm": {
-      "idProof": "Prueba de Identidad",
-      "addressProof": "Prueba de Domicilio",
-      "uploadHint": "Haga clic o arrastre el archivo a esta área para cargar",
-      "notUploaded": "No cargado"
+      "fullNamePlaceholder": "Ingrese su nombre completo"
     },
     "reviewSubmitForm": {
-      "reviewDetails": "Revise los detalles de su solicitud antes de enviar.",
+      "reviewDetails": "Por favor, revise los detalles de su solicitud antes de enviarla.",
       "submitting": "Enviando...",
       "loading": "Cargando detalles..."
     },
     "applicationSubmitted": "¡Solicitud Enviada!",
     "applicationSubmittedDesc": "Su solicitud de préstamo ha sido enviada con éxito. Nos pondremos en contacto con usted en breve."
   },
+  "applicationForm": {
+    "title": "Formulario de Solicitud de Préstamo",
+    "formTitle": "Detalles de la Solicitud de Préstamo",
+    "formDescription": "Por favor, complete todas las secciones con precisión y en su totalidad.",
+    "submitButton": "Guardar y Enviar Solicitud",
+    "sections": {
+      "personalDetails": {
+        "title": "1. Detalles Personales",
+        "fullName": "Nombre Completo",
+        "fatherHusbandName": "Nombre del Padre / Cónyuge",
+        "dob": "Fecha de Nacimiento / Edad",
+        "gender": "Género",
+        "maritalStatus": "Estado Civil",
+        "currentAddress": "Dirección (Actual)",
+        "permanentAddress": "Dirección (Permanente)",
+        "phone": "Número de Teléfono",
+        "email": "Correo Electrónico",
+        "photo": "Foto (Subir)",
+        "idNumber": "Número de Aadhaar / Cédula de Elector / PAN"
+      },
+      "loanRequirement": {
+        "title": "2. Requisito del Préstamo",
+        "purpose": "Propósito del Préstamo",
+        "amount": "Monto del Préstamo Necesario",
+        "repaymentPeriod": "Período de Pago Preferido",
+        "loanType": "Tipo de Préstamo"
+      }
+    }
+  },
   "compareLoans": {
     "title": "Comparar Opciones de Préstamo",
     "loanTypeComparison": "Comparación de Tipos de Préstamo",
     "loanType": "Tipo de Préstamo",
     "interestRate": "Tasa de Interés",
-    "maxTenure": "Plazo Máximo (Meses)",
+    "maxTenure": "Plazo Máximo (Años)",
     "maxAmount": "Monto Máximo (INR)",
     "calculateEMI": "Calcular EMI",
     "selectForEMI": "Seleccionar para Cálculo de EMI",
     "loanAmount": "Monto del Préstamo",
     "loanTenure": "Plazo del Préstamo (Meses)",
-    "monthlyEMI": "EMI Mensual: {{emi}}",
+    "monthlyEMI": "EMI Mensual",
     "enterAllDetails": "Por favor, ingrese el Monto del Préstamo, Plazo y seleccione/ingrese una Tasa de Interés.",
-    "clickToCalculateEMI": "Haga clic en 'Calcular EMI' para ver el pago mensual.",
-    "usingSelectedRate": "Usando tasa de tipo de préstamo seleccionada: {{rate}}%",
+    "clickToCalculateEMI": "Haga clic en 'Calcular' para ver el pago mensual y guardar para su informe.",
+    "usingSelectedRate": "Usando la tasa del tipo de préstamo seleccionado: {{rate}}%",
     "selectOrEnterRate": "Seleccione un tipo de préstamo de la tabla anterior o ingrese una tasa de interés manualmente.",
-    "calculateEMIButton": "Calcular EMI",
-    "emiDetails": "Detalles de EMI",
+    "calculateEMIButton": "Calcular y Guardar para Informe",
+    "calculationSavedTitle": "Cálculo Guardado",
+    "calculationSavedDesc": "Los detalles de su cálculo de EMI se han guardado para el informe en PDF.",
+    "emiDetails": "Resumen de Pago",
     "loanRepaymentBreakdown": "Desglose de Pago de Préstamo",
     "principalAmount": "Monto Principal",
     "totalInterest": "Interés Total",
     "totalPayment": "Pago Total"
+  },
+  "emiCalculator": {
+    "title": "Calculadora de EMI",
+    "calculatorTitle": "Calculadora de Pago de Préstamo",
+    "calculatorDescription": "Ingrese los detalles de su préstamo para calcular su pago mensual y ver un cronograma de amortización completo.",
+    "tenureInYears": "Plazo (Años)",
+    "emiOptionsTitle": "Opciones de EMI para Diferentes Plazos",
+    "emiOptionsDescription": "Basado en un monto de préstamo de {{amount}} a una tasa de interés de {{rate}}%.",
+    "amortizationDescription": "Esta tabla muestra el desglose de cada pago mensual en capital e intereses durante todo el plazo del préstamo."
+  },
+  "viewApplications": {
+    "noApplicationsTitle": "No hay Solicitudes Guardadas",
+    "noApplicationsDesc": "Las solicitudes enviadas desde el formulario 'Solicitar Préstamo' aparecerán aquí.",
+    "submittedOn": "Enviado el",
+    "purpose": "Propósito",
+    "delete": "Eliminar",
+    "saveSuccess": "Su solicitud ha sido guardada en su perfil y se puede ver en esta página.",
+    "submitAnother": "Enviar Otra Solicitud",
+    "clearAll": "Eliminar Todas las Solicitudes",
+    "confirmClearAll": "¿Está seguro de que desea eliminar todas las solicitudes guardadas? Esta acción no se puede deshacer.",
+    "confirmDelete": "¿Está seguro de que desea eliminar esta solicitud?",
+    "deleteSuccess": "Solicitud eliminada con éxito.",
+    "deleteError": "No se pudo eliminar la solicitud."
   },
   "interestRatesPage": {
     "title": "Tasas de Interés Actuales",
@@ -199,13 +267,15 @@
     "updatedOn": "Tasas actualizadas el {{date}}"
   },
   "reportPage": {
-    "title": "Descargar Informe del Tablero",
-    "generateTitle": "Generar Resumen en PDF",
-    "description": "Haga clic en el botón de abajo para generar y descargar un resumen en PDF de los datos actuales del tablero de préstamos.",
-    "infoText": "El PDF incluirá métricas clave, tasas de interés por tipo de préstamo y ofertas de préstamos específicas de cada banco.",
-    "downloadButton": "Generar y Descargar PDF",
-    "imageAlt": "Representación estilizada de un informe financiero",
-    "imageCaption": "Sus datos de préstamo completos, resumidos."
+    "title": "Descargar Informe de Préstamo",
+    "generateTitle": "Generar Informe de Préstamo",
+    "description": "Genere un informe en PDF basado en los datos de su préstamo calculado en la página 'Comparar y Calcular' y su última solicitud detallada.",
+    "infoText_v1": "El informe utilizará los detalles del préstamo que calculó por última vez en la página 'Comparar y Calcular'.",
+    "infoText_v2": "Aún no se han calculado datos de préstamo. Por favor, vaya a la página 'Comparar y Calcular' para calcular su EMI. El informe se generará con datos de muestra.",
+    "infoText_v3_application": "También incluirá detalles de su solicitud detallada más reciente guardada.",
+    "infoText_v3_no_application": "Aún no se ha guardado ninguna solicitud detallada. Puede guardar una desde la página 'Solicitar Préstamo'.",
+    "downloadButton_v1": "Descargar Su Informe de Préstamo",
+    "downloadButton_v2": "Descargar Informe de Muestra"
   },
   "footer": {
     "copyRight": "© {{year}} LoanView. Todos los derechos reservados."
@@ -213,593 +283,89 @@
   "formValidation": {
     "required": "Este campo es obligatorio.",
     "invalidEmail": "Dirección de correo electrónico no válida.",
-    "positiveNumber": "Debe ser un número positivo."
+    "positiveNumber": "Debe ser un número positivo.",
+    "minLength": "Debe tener al menos {{length}} caracteres."
+  },
+  "login": {
+    "title": "Inicie Sesión en su Cuenta",
+    "description": "Ingrese sus credenciales para acceder a su tablero.",
+    "emailLabel": "Correo Electrónico",
+    "passwordLabel": "Contraseña",
+    "signInButton": "Iniciar Sesión",
+    "signOutButton": "Cerrar Sesión",
+    "signingIn": "Iniciando Sesión...",
+    "signInSuccessTitle": "Inicio de Sesión Exitoso",
+    "signInSuccessDesc": "¡Bienvenido de nuevo! Redirigiendo a su tablero.",
+    "signInFailed": "Falló el Inicio de Sesión",
+    "signUp": "Registrarse",
+    "createAccount": "Crear una Cuenta",
+    "signUpDescription": "Ingrese sus detalles para crear una nueva cuenta.",
+    "signUpSuccess": "¡Cuenta Creada!",
+    "signUpSuccessDesc": "Se ha registrado e iniciado sesión con éxito.",
+    "signUpFailed": "Falló el Registro",
+    "creatingAccount": "Creando Cuenta..."
+  },
+  "profilePage": {
+    "title": "Perfil de Usuario",
+    "description": "Ver y administrar su información de perfil.",
+    "updateSuccess": "¡Perfil actualizado con éxito!",
+    "updateError": "No se pudo actualizar el perfil.",
+    "personalInfo": "Información Personal",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "phoneNumber": "Número de Teléfono",
+    "address": "Dirección",
+    "saveChanges": "Guardar Cambios",
+    "saving": "Guardando..."
   },
   "pdf": {
-    "reportGenerated": "Informe generado el",
+    "loadingReport": "Cargando datos del informe...",
+    "reportGenerated": "Informe Generado el",
     "page": "Página",
     "years": "Años",
     "applicationSummary": {
-      "title": "Resumen de la solicitud de préstamo"
+      "title": "Resumen de la Solicitud de Préstamo"
     },
     "keyFacts": {
-      "title": "Declaración de hechos clave"
+      "title": "Declaración de Hechos Clave"
     },
     "marketComparison": {
-      "title": "Comparación de mercado para {{loanType}}"
+      "title": "Comparación de Mercado para {{loanType}}"
     },
     "loanSummary": {
-      "loanAmount": "Monto del préstamo",
-      "principalAmount": "Monto principal",
-      "interestRate": "Tasa de interés anual",
+      "loanAmount": "Monto del Préstamo",
+      "principalAmount": "Monto Principal",
+      "interestRate": "Tasa de Interés Anual",
       "tenure": "Plazo",
-      "monthlyEMI": "EMI mensual",
-      "totalInterest": "Total de intereses a pagar",
-      "totalPayment": "Pago total (Principal + Intereses)"
+      "monthlyEMI": "EMI Mensual",
+      "totalInterest": "Interés Total a Pagar",
+      "totalPayment": "Pago Total (Principal + Interés)"
     },
     "paymentPlan": {
-      "title": "Plan de pago (Tabla de amortización)",
+      "title": "Plan de Pago (Tabla de Amortización)",
       "month": "Mes #",
       "principal": "Principal",
       "interest": "Interés",
-      "totalPayment": "Pago total",
-      "balance": "Saldo restante"
+      "totalPayment": "Pago Total",
+      "balance": "Saldo Restante"
+    },
+    "nextSteps": {
+      "title": "Próximos Pasos y Recomendaciones",
+      "contactBank": "1. Póngase en contacto con los bancos con las tasas más favorables de la sección 'Comparación de Mercado' para confirmar sus ofertas.",
+      "prepareDocuments": "2. Prepare los documentos necesarios como prueba de identidad, prueba de domicilio y estados de ingresos para un proceso de solicitud más rápido."
     },
     "disclaimers": {
-      "title": "Descargos de responsabilidad y alertas",
-      "discrepancy": "Por favor, revise esta declaración con atención. Cualquier discrepancia debe ser informada al banco dentro de los 30 días posteriores a la fecha de la declaración.",
-      "fraudWarning": "Alerta de fraude: no comparta su PIN, OTP ni ningún detalle bancario confidencial con nadie. El banco nunca solicita esta información."
+      "title": "Descargos de Responsabilidad y Alertas",
+      "discrepancy": "Por favor, revise este estado de cuenta cuidadosamente. Cualquier discrepancia debe ser reportada al banco dentro de los 30 días posteriores a la fecha del estado de cuenta.",
+      "fraudWarning": "Alerta de Fraude: No comparta su PIN, OTP o cualquier detalle bancario confidencial con nadie. El banco nunca solicita esta información."
     },
     "support": {
-      "title": "Soporte e información de contacto",
-      "helpline": "Línea de ayuda de atención al cliente"
-    },
-    "summary": "Resumen",
-    "dashboardMetrics": "Métricas del Tablero"
+      "title": "Soporte e Información de Contacto",
+      "helpline": "Línea de Ayuda de Soporte al Cliente"
+    }
   },
   "currency": {
     "inr": "INR"
   },
   "N/A": "N/D"
 }
-
-```
-</content>
-  </change>
-  <change>
-    <file>/src/locales/fr.json</file>
-    <content><![CDATA[
-{
-  "appName": "LoanView",
-  "nav": {
-    "dashboard": "Tableau de Bord",
-    "applyLoan": "Demander un Prêt",
-    "compareLoans": "Comparer les Prêts",
-    "interestRates": "Taux d'Intérêt",
-    "downloadReport": "Télécharger le Rapport",
-    "howToPlay": "Comment Jouer"
-  },
-  "dashboard": {
-    "title": "Tableau de Bord des Prêts",
-    "totalLoans": "Total des Prêts",
-    "avgLoanSize": "Taille Moyenne Prêt (INR)",
-    "approvalRate": "Taux d'Approbation",
-    "aiSuggestions": {
-      "title": "Aperçus de Localisation par IA",
-      "description": "Entrez un groupe démographique cible pour obtenir des visualisations et des suggestions d'interprétation culturellement pertinentes pour les données de prêt.",
-      "demographicLabel": "Groupe Démographique Cible",
-      "demographicPlaceholder": "Ex: Jeunes Professionnels en Zone Urbaine",
-      "getSuggestions": "Obtenir des Suggestions",
-      "visualizationSuggestion": "Suggestion de Visualisation",
-      "interpretationSuggestion": "Suggestion d'Interprétation",
-      "noSuggestions": "Entrez un groupe démographique et cliquez sur 'Obtenir des Suggestions' pour voir les aperçus de l'IA.",
-      "loadingSuggestions": "Chargement des suggestions...",
-      "errorSuggestions": "Impossible de récupérer les suggestions. Veuillez réessayer."
-    },
-    "recentActivity": "Activité Récente",
-    "noRecentActivity": "Aucune activité récente à afficher.",
-    "loanInterestRatesChart": {
-      "title": "Aperçu des Taux d'Intérêt des Prêts",
-      "description": "Une comparaison visuelle des taux d'intérêt pour différents types de prêts."
-    },
-    "bankLoanRates": {
-      "title": "Offres de Prêts Bancaires",
-      "description": "Comparez les taux d'intérêt pour divers prêts de différentes banques.",
-      "bankName": "Nom de la Banque",
-      "loanType": "Type de Prêt",
-      "interestRate": "Taux d'Intérêt (%)",
-      "filters": {
-        "searchPlaceholder": "Rechercher par banque ou type de prêt...",
-        "selectBank": "Sélectionner Banque",
-        "allBanks": "Toutes les Banques",
-        "selectLoanType": "Sélectionner Type de Prêt",
-        "allLoanTypes": "Tous les Types de Prêt",
-        "interestRateRange": "Fourchette de Taux d'Intérêt",
-        "minRate": "Taux Min.",
-        "maxRate": "Taux Max.",
-        "selectBankCategory": "Sélectionner Catégorie de Banque",
-        "allBankCategories": "Toutes Catégories",
-        "publicSector": "Secteur Public",
-        "privateSector": "Secteur Privé",
-        "smallFinanceBank": "Petite Banque de Financement",
-        "paymentBank": "Banque de Paiement",
-        "nbfc": "NBFC",
-        "foreignBank": "Banque Étrangère"
-      },
-      "downloadCsv": "Télécharger CSV",
-      "tooltip": {
-        "tenure": "Durée : {{min}} - {{max}} mois",
-        "maxAmount": "Montant Max : {{amount}}",
-        "processingFee": "Frais de Dossier : {{fee}}",
-        "rateType": "Type de Taux : {{type}}"
-      },
-      "noResults": "Aucun produit de prêt ne correspond à vos filtres actuels."
-    },
-    "themeToggle": {
-      "light": "Passer en Mode Clair",
-      "dark": "Passer en Mode Sombre",
-      "toggle": "Changer de thème"
-    },
-    "keyRateStatistics": {
-      "title": "Statistiques Clés des Taux",
-      "description": "Résumé des taux d'intérêt basé sur les filtres actuels.",
-      "overallAvgRate": "Taux Moyen Global",
-      "overallMinRate": "Taux Minimum Global",
-      "overallMaxRate": "Taux Maximum Global",
-      "lowestAvgRateLoanType": "Type de Prêt le Plus Compétitif",
-      "highestAvgRateLoanType": "Type de Prêt le Plus Cher",
-      "avgRateSuffix": "Taux Moyen",
-      "noData": "Pas assez de données pour les statistiques."
-    },
-    "bankRatesComparisonChart": {
-      "title": "Comparaison des Taux Bancaires pour le Type de Prêt Sélectionné",
-      "description": "Sélectionnez un type de prêt pour voir comment les taux d'intérêt se comparent entre différentes banques.",
-      "selectLoanTypePlaceholder": "Sélectionnez un Type de Prêt à Comparer",
-      "noData": "Aucune donnée disponible pour le type de prêt et les filtres sélectionnés.",
-      "yAxisLabel": "Taux d'Intérêt (%)"
-    }
-  },
-  "loanTypes": {
-    "home": {
-      "name": "Prêt Immobilier",
-      "description": "Financez la maison de vos rêves avec des taux compétitifs.",
-      "processingFee": "Jusqu'à 1% du montant du prêt"
-    },
-    "personal": {
-      "name": "Prêt Personnel",
-      "description": "Prêts flexibles pour vos besoins personnels.",
-      "processingFee": "1-2% du montant du prêt"
-    },
-    "education": {
-      "name": "Prêt Étudiant",
-      "description": "Investissez dans votre avenir avec notre financement étudiant.",
-      "processingFee": "Typiquement 0,5-1%"
-    },
-    "vehicle": {
-      "name": "Prêt Véhicule",
-      "description": "Prenez la route avec nos prêts véhicules attractifs.",
-      "processingFee": "Jusqu'à 1,5% du montant du prêt"
-    },
-    "business": {
-      "name": "Prêt Commercial",
-      "description": "Alimentez la croissance de votre entreprise avec nos prêts sur mesure.",
-      "processingFee": "1-2,5% du montant du prêt, soumis à conditions"
-    },
-    "gold": {
-      "name": "Prêt sur Or",
-      "description": "Utilisez vos actifs en or pour des besoins financiers immédiats.",
-      "processingFee": "0,5-1,5% du montant du prêt"
-    },
-    "rateTypes": {
-      "fixed": "Fixe",
-      "floating": "Flottant"
-    }
-  },
-  "loanApplication": {
-    "title": "Demande de Prêt",
-    "steps": {
-      "personalDetails": "Détails Personnels",
-      "incomeDetails": "Détails des Revenus",
-      "documentUpload": "Téléchargement de Documents",
-      "reviewSubmit": "Vérifier et Soumettre"
-    },
-    "next": "Suivant",
-    "previous": "Précédent",
-    "submit": "Soumettre la Demande",
-    "selectLoanType": "Sélectionner le Type de Prêt",
-    "selectLoanTypePlaceholder": "Choisissez un type de prêt...",
-    "personalDetailsForm": {
-      "fullName": "Nom Complet",
-      "fullNamePlaceholder": "Entrez votre nom complet",
-      "email": "Adresse E-mail",
-      "emailPlaceholder": "Entrez votre e-mail",
-      "phone": "Numéro de Téléphone",
-      "phonePlaceholder": "Entrez votre numéro de téléphone"
-    },
-    "incomeDetailsForm": {
-      "monthlyIncome": "Revenu Mensuel (INR)",
-      "monthlyIncomePlaceholderINR": "Ex: 50000",
-      "employmentStatus": "Statut d'Emploi",
-      "employmentStatusPlaceholder": "Sélectionnez le statut d'emploi",
-      "employed": "Employé",
-      "selfEmployed": "Indépendant",
-      "unemployed": "Sans emploi"
-    },
-    "documentUploadForm": {
-      "idProof": "Justificatif d'Identité",
-      "addressProof": "Justificatif de Domicile",
-      "uploadHint": "Cliquez ou faites glisser un fichier dans cette zone pour télécharger",
-      "notUploaded": "Non téléchargé"
-    },
-    "reviewSubmitForm": {
-      "reviewDetails": "Veuillez vérifier les détails de votre demande avant de soumettre.",
-      "submitting": "Soumission en cours...",
-      "loading": "Chargement des détails..."
-    },
-    "applicationSubmitted": "Demande Soumise!",
-    "applicationSubmittedDesc": "Votre demande de prêt a été soumise avec succès. Nous vous contacterons sous peu."
-  },
-  "compareLoans": {
-    "title": "Comparer les Options de Prêt",
-    "loanTypeComparison": "Comparaison des Types de Prêt",
-    "loanType": "Type de Prêt",
-    "interestRate": "Taux d'Intérêt",
-    "maxTenure": "Durée Maximale (Mois)",
-    "maxAmount": "Montant Maximum (INR)",
-    "calculateEMI": "Calculer l'EMI",
-    "selectForEMI": "Sélectionner pour Calcul EMI",
-    "loanAmount": "Montant du Prêt",
-    "loanTenure": "Durée du Prêt (Mois)",
-    "monthlyEMI": "EMI Mensuelle: {{emi}}",
-    "enterAllDetails": "Veuillez saisir le Montant du Prêt, la Durée et sélectionner/saisir un Taux d'Intérêt.",
-    "clickToCalculateEMI": "Cliquez sur 'Calculer l'EMI' pour voir le paiement mensuel.",
-    "usingSelectedRate": "Utilisation du taux de type de prêt sélectionné : {{rate}}%",
-    "selectOrEnterRate": "Sélectionnez un type de prêt dans le tableau ci-dessus ou saisissez manuellement un taux d'intérêt.",
-    "calculateEMIButton": "Calculer l'EMI",
-    "emiDetails": "Détails de l'EMI",
-    "loanRepaymentBreakdown": "Répartition du Remboursement du Prêt",
-    "principalAmount": "Montant Principal",
-    "totalInterest": "Intérêt Total",
-    "totalPayment": "Paiement Total"
-  },
-  "interestRatesPage": {
-    "title": "Taux d'Intérêt Actuels",
-    "loanCategory": "Catégorie de Prêt",
-    "rate": "Taux d'Intérêt (annuel)",
-    "updatedOn": "Taux mis à jour le {{date}}"
-  },
-  "reportPage": {
-    "title": "Télécharger le Rapport du Tableau de Bord",
-    "generateTitle": "Générer un Résumé PDF",
-    "description": "Cliquez sur le bouton ci-dessous pour générer et télécharger un résumé PDF des données actuelles du tableau de bord des prêts.",
-    "infoText": "Le PDF inclura les indicateurs clés, les taux d'intérêt par type de prêt et les offres de prêts spécifiques aux banques.",
-    "downloadButton": "Générer et Télécharger le PDF",
-    "imageAlt": "Représentation stylisée d'un rapport financier",
-    "imageCaption": "Vos données de prêt complètes, résumées."
-  },
-  "footer": {
-    "copyRight": "© {{year}} LoanView. Tous droits réservés."
-  },
-  "formValidation": {
-    "required": "Ce champ est obligatoire.",
-    "invalidEmail": "Adresse e-mail invalide.",
-    "positiveNumber": "Doit être un nombre positif."
-  },
-  "pdf": {
-    "reportGenerated": "Rapport généré le",
-    "page": "Page",
-    "years": "Ans",
-    "applicationSummary": {
-      "title": "Résumé de la demande de prêt"
-    },
-    "keyFacts": {
-      "title": "Déclaration des faits clés"
-    },
-    "marketComparison": {
-      "title": "Comparaison du marché pour {{loanType}}"
-    },
-    "loanSummary": {
-      "loanAmount": "Montant du prêt",
-      "principalAmount": "Montant principal",
-      "interestRate": "Taux d'intérêt annuel",
-      "tenure": "Durée",
-      "monthlyEMI": "EMI mensuelle",
-      "totalInterest": "Total des intérêts à payer",
-      "totalPayment": "Paiement total (Principal + Intérêts)"
-    },
-    "paymentPlan": {
-      "title": "Plan de paiement (Tableau d'amortissement)",
-      "month": "Mois #",
-      "principal": "Principal",
-      "interest": "Intérêt",
-      "totalPayment": "Paiement total",
-      "balance": "Solde restant"
-    },
-    "disclaimers": {
-      "title": "Avis de non-responsabilité et alertes",
-      "discrepancy": "Veuillez examiner attentivement cette déclaration. Toute divergence doit être signalée à la banque dans les 30 jours suivant la date de la déclaration.",
-      "fraudWarning": "Alerte à la fraude : ne partagez votre code PIN, votre OTP ou toute autre information bancaire confidentielle avec personne. La banque ne demande jamais ces informations."
-    },
-    "support": {
-      "title": "Support et informations de contact",
-      "helpline": "Ligne d'assistance clientèle"
-    },
-    "summary": "Résumé",
-    "dashboardMetrics": "Indicateurs du Tableau de Bord"
-  },
-  "currency": {
-    "inr": "INR"
-  },
-  "N/A": "N/A"
-}
-
-```
-</content>
-  </change>
-  <change>
-    <file>/src/locales/as.json</file>
-    <content><![CDATA[
-{
-  "appName": "LoanView",
-  "nav": {
-    "dashboard": "ডেশ্বৰ্ড",
-    "applyLoan": "ঋণৰ বাবে আবেদন কৰক",
-    "compareLoans": "ঋণ তুলনা কৰক",
-    "interestRates": "সুদৰ হাৰ",
-    "downloadReport": "প্ৰতিবেদন ডাউনলোড কৰক",
-    "howToPlay": "কেনেকৈ খেলিব"
-  },
-  "dashboard": {
-    "title": "ঋণ ডেশ্বৰ্ড",
-    "totalLoans": "মুঠ ঋণ",
-    "avgLoanSize": "গড় ঋণৰ আকাৰ (INR)",
-    "approvalRate": "অনুমোদনৰ হাৰ",
-    "aiSuggestions": {
-      "title": "AI-চালিত থলুৱাকৰণ অন্তৰ্দৃষ্টি",
-      "description": "ঋণৰ তথ্যৰ বাবে সংস্কৃতিগতভাৱে প্ৰাসঙ্গিক দৃশ্যায়ন আৰু ব্যাখ্যাৰ পৰামৰ্শ ল'বলৈ এটা লক্ষ্য জনগাঁথনি প্ৰবিষ্ট কৰক।",
-      "demographicLabel": "লক্ষ্য জনগাঁথনি",
-      "demographicPlaceholder": "যেনে, চহৰ অঞ্চলৰ যুৱ পেছাদাৰীসকল",
-      "getSuggestions": "পৰামৰ্শ লওক",
-      "visualizationSuggestion": "দৃশ্যায়নৰ পৰামৰ্ש",
-      "interpretationSuggestion": "ব্যাখ্যাৰ পৰামৰ্ש",
-      "noSuggestions": "এটা জনগাঁথনি প্ৰবিষ্ট কৰক আৰু AI অন্তৰ্দৃষ্টি চাবলৈ 'পৰামৰ্ש লওক' ক্লিক কৰক।",
-      "loadingSuggestions": "পৰামৰ্ש লোড হৈ আছে...",
-      "errorSuggestions": "পৰামৰ্ש আনিব পৰা ন'গ'ল। অনুগ্ৰহ কৰি পুনৰ চেষ্টা কৰক।"
-    },
-    "recentActivity": "শেহতীয়া কাৰ্যকলাপ",
-    "noRecentActivity": "প্ৰদৰ্শন কৰিবলৈ কোনো শেহতীয়া কাৰ্যকলাপ নাই।",
-    "loanInterestRatesChart": {
-      "title": "ঋণৰ সুদৰ হাৰৰ আভাস",
-      "description": "বিভিন্ন প্ৰকাৰৰ ঋণৰ বাবে সুদৰ হাৰৰ এক দৃশ্যগত তুলনা।"
-    },
-    "bankLoanRates": {
-      "title": "বেংক ঋণৰ অফাৰসমূহ",
-      "description": "বিভিন্ন বেংকৰ পৰা বিভিন্ন ঋণৰ বাবে সুদৰ হাৰ তুলনা কৰক।",
-      "bankName": "বেংকৰ নাম",
-      "loanType": "ঋণৰ প্ৰকাৰ",
-      "interestRate": "সুদৰ হাৰ (%)",
-      "filters": {
-        "searchPlaceholder": "বেংক বা ঋণৰ প্ৰকাৰৰ দ্বাৰা সন্ধান কৰক...",
-        "selectBank": "বেংক বাছনি কৰক",
-        "allBanks": "সকলো বেংক",
-        "selectLoanType": "ঋণৰ প্ৰকাৰ বাছনি কৰক",
-        "allLoanTypes": "সকলো ঋণৰ প্ৰকাৰ",
-        "interestRateRange": "সুদৰ হাৰৰ পৰিসৰ",
-        "minRate": "নিম্নতম হাৰ",
-        "maxRate": "সৰ্বোচ্চ হাৰ",
-        "selectBankCategory": "বেংকৰ শ্ৰেণী বাছনি কৰক",
-        "allBankCategories": "সকলো শ্ৰেণী",
-        "publicSector": "ৰাজহুৱা খণ্ড",
-        "privateSector": "ব্যক্তিগত খণ্ড",
-        "smallFinanceBank": "ক্ষুদ্ৰ বিত্তীয় বেংক",
-        "paymentBank": "পেমেন্ট বেংক",
-        "nbfc": "NBFC",
-        "foreignBank": "বিদেশী বেংক"
-      },
-      "downloadCsv": "CSV ডাউনলোড কৰক",
-      "tooltip": {
-        "tenure": "কাৰ্যকাল: {{min}} - {{max}} মাহ",
-        "maxAmount": "সৰ্বোচ্চ পৰিমাণ: {{amount}}",
-        "processingFee": "প্ৰক্ৰিয়াকৰণ মাচুল: {{fee}}",
-        "rateType": "হাৰৰ প্ৰকাৰ: {{type}}"
-      },
-      "noResults": "আপোনাৰ বৰ্তমানৰ ফিল্টাৰৰ সৈতে কোনো ঋণ সামগ্ৰী মিল নাখায়।"
-    },
-    "themeToggle": {
-      "light": "লাইট মোডলৈ সলনি কৰক",
-      "dark": "ডাৰ্ক মোডলৈ সলনি কৰক",
-      "toggle": "থীম সলনি কৰক"
-    },
-    "keyRateStatistics": {
-      "title": "মুখ্য হাৰৰ পৰিসংখ্যা",
-      "description": "বৰ্তমানৰ ফিল্টাৰৰ ওপৰত ভিত্তি কৰি সুদৰ হাৰৰ সাৰাংশ।",
-      "overallAvgRate": "সামগ্ৰিক গড় হাৰ",
-      "overallMinRate": "সামগ্ৰিক নূন্যতম হাৰ",
-      "overallMaxRate": "সামগ্ৰিক সৰ্বোচ্চ হাৰ",
-      "lowestAvgRateLoanType": "আটাইতকৈ প্ৰতিযোগিতামূলক ঋণৰ প্ৰকাৰ",
-      "highestAvgRateLoanType": "আটাইতকৈ ব্যয়বহুল ঋণৰ প্ৰকাৰ",
-      "avgRateSuffix": "গড় হাৰ",
-      "noData": "পৰিসংখ্যাৰ বাবে পৰ্যাপ্ত তথ্য নাই।"
-    },
-    "bankRatesComparisonChart": {
-      "title": "বাছনি কৰা ঋণৰ প্ৰকাৰৰ বাবে বেংকৰ হাৰৰ তুলনা",
-      "description": "বিভিন্ন বেংকৰ মাজত সুদৰ হাৰ কেনেদৰে তুলনা কৰা হয় চাবলৈ এটা ঋণৰ প্ৰকাৰ বাছনি কৰক।",
-      "selectLoanTypePlaceholder": "তুলনা কৰিবলৈ এটা ঋণৰ প্ৰকাৰ বাছনি কৰক",
-      "noData": "বাছনি কৰা ঋণৰ প্ৰকাৰ আৰু ফিল্টাৰৰ বাবে কোনো তথ্য উপলব্ধ নাই।",
-      "yAxisLabel": "সুদৰ হাৰ (%)"
-    }
-  },
-  "loanTypes": {
-    "home": {
-      "name": "গৃহ ঋণ",
-      "description": "প্ৰতিযোগিতামূলক হাৰত আপোনাৰ সপোনৰ ঘৰ বিত্তায়ন কৰক।",
-      "processingFee": "ঋণৰ পৰিমাণৰ ১% লৈকে"
-    },
-    "personal": {
-      "name": "ব্যক্তিগত ঋণ",
-      "description": "আপোনাৰ ব্যক্তিগত প্ৰয়োজনৰ বাবে নমনীয় ঋণ।",
-      "processingFee": "ঋণৰ পৰিমাণৰ ১-২%"
-    },
-    "education": {
-      "name": "শিক্ষা ঋণ",
-      "description": "আমাৰ শিক্ষা বিত্তায়নেৰে আপোনাৰ ভৱিষ্যতত বিনিয়োগ কৰক।",
-      "processingFee": "সাধাৰণতে ০.৫-১%"
-    },
-    "vehicle": {
-      "name": "বাহন ঋণ",
-      "description": "আমাৰ আকৰ্ষণীয় বাহন ঋণেৰে পথত নামি পৰক।",
-      "processingFee": "ঋণৰ পৰিমাণৰ ১.৫% লৈকে"
-    },
-    "business": {
-      "name": "ব্যৱসায়িক ঋণ",
-      "description": "আমাৰ বিশেষভাৱে তৈয়াৰ কৰা ঋণেৰে আপোনাৰ ব্যৱসায়ৰ বৃদ্ধিত ইন্ধন যোগাওক।",
-      "processingFee": "ঋণৰ পৰিমাণৰ ১-২.৫%, চৰ্ত সাপেক্ষে"
-    },
-    "gold": {
-      "name": "সোণৰ ঋণ",
-      "description": " তৎকালীন বিত্তীয় প্ৰয়োজনৰ বাবে আপোনাৰ সোণৰ সম্পদ ব্যৱহাৰ কৰক।",
-      "processingFee": "ঋণৰ পৰিমাণৰ ০.৫-১.৫%"
-    },
-    "rateTypes": {
-      "fixed": "স্থিৰ",
-      "floating": "অস্থিৰ"
-    }
-  },
-  "loanApplication": {
-    "title": "ঋণ আবেদন",
-    "steps": {
-      "personalDetails": "ব্যক্তিগত বিৱৰণ",
-      "incomeDetails": "আয়ৰ বিৱৰণ",
-      "documentUpload": "নথি আপলোড",
-      "reviewSubmit": "পুনৰীক্ষণ আৰু দাখিল"
-    },
-    "next": "পৰৱৰ্তী",
-    "previous": "পূৰ্বৱৰ্তী",
-    "submit": "আবেদন দাখিল কৰক",
-    "selectLoanType": "ঋণৰ প্ৰকাৰ বাছনি কৰক",
-    "selectLoanTypePlaceholder": "এটা ঋণৰ প্ৰকাৰ বাছনি কৰক...",
-    "personalDetailsForm": {
-      "fullName": "সম্পূৰ্ণ নাম",
-      "fullNamePlaceholder": "আপোনাৰ সম্পূৰ্ণ নাম লিখক",
-      "email": "ইমেইল ঠিকনা",
-      "emailPlaceholder": "আপোনাৰ ইমেইল লিখক",
-      "phone": "ফোন নম্বৰ",
-      "phonePlaceholder": "আপোনাৰ ফোন নম্বৰ লিখক"
-    },
-    "incomeDetailsForm": {
-      "monthlyIncome": "মাহিলী আয় (INR)",
-      "monthlyIncomePlaceholderINR": "যেনে, ৫০০০০",
-      "employmentStatus": "নিয়োগৰ স্থিতি",
-      "employmentStatusPlaceholder": "নিয়োগৰ স্থিতি বাছনি কৰক",
-      "employed": "নিয়োজিত",
-      "selfEmployed": "স্ব-নিয়োজিত",
-      "unemployed": "বেকাৰ"
-    },
-    "documentUploadForm": {
-      "idProof": "পৰিচয় পত্ৰ",
-      "addressProof": "ঠিকনাৰ প্ৰমাণ",
-      "uploadHint": "আপলোড কৰিবলৈ ফাইল ইয়াত ক্লিক কৰক বা টানি আনক",
-      "notUploaded": "আপলোড কৰা হোৱা নাই"
-    },
-    "reviewSubmitForm": {
-      "reviewDetails": "দাখিল কৰাৰ আগতে অনুগ্ৰহ কৰি আপোনাৰ আবেদনৰ বিৱৰণ পুনৰীক্ষণ কৰক।",
-      "submitting": "দাখিল কৰি থকা হৈছে...",
-      "loading": "বিৱৰণ লোড হৈ আছে..."
-    },
-    "applicationSubmitted": "আবেদন দাখিল হ'ল!",
-    "applicationSubmittedDesc": "আপোনাৰ ঋণ আবেদন সফলতাৰে দাখিল কৰা হৈছে। আমি সোনকালেই আপোনাৰ সৈতে যোগাযোগ কৰিম।"
-  },
-  "compareLoans": {
-    "title": "ঋণ বিকল্পসমূহ তুলনা কৰক",
-    "loanTypeComparison": "ঋণৰ প্ৰকাৰৰ তুলনা",
-    "loanType": "ঋণৰ প্ৰকাৰ",
-    "interestRate": "সুদৰ হাৰ",
-    "maxTenure": "সৰ্বোচ্চ ম্যাদ (মাহ)",
-    "maxAmount": "সৰ্বোচ্চ পৰিমাণ (INR)",
-    "calculateEMI": "EMI গণনা কৰক",
-    "selectForEMI": "EMI গণনাৰ বাবে বাছনি কৰক",
-    "loanAmount": "ঋণৰ পৰিমাণ",
-    "loanTenure": "ঋণৰ ম্যাদ (মাহ)",
-    "monthlyEMI": "মাহিলী EMI: {{emi}}",
-    "enterAllDetails": "অনুগ্ৰহ কৰি ঋণৰ পৰিমাণ, ম্যাদ, আৰু সুদৰ হাৰ বাছনি/প্ৰবিষ্ট কৰক।",
-    "clickToCalculateEMI": "মাহিলী পৰিশোধ চাবলৈ 'EMI গণনা কৰক' ক্লিক কৰক।",
-    "usingSelectedRate": "বাছনি কৰা ঋণৰ প্ৰকাৰৰ হাৰ ব্যৱহাৰ কৰি: {{rate}}%",
-    "selectOrEnterRate": "ওপৰৰ তালিকাৰ পৰা এটা ঋণৰ প্ৰকাৰ বাছনি কৰক বা নিজে এটা সুদৰ হাৰ প্ৰবিষ্ট কৰক।",
-    "calculateEMIButton": "EMI গণনা কৰক",
-    "emiDetails": "EMI বিৱৰণ",
-    "loanRepaymentBreakdown": "ঋণ পৰিশোধৰ বিভাজন",
-    "principalAmount": "মূলধনৰ পৰিমাণ",
-    "totalInterest": "মুঠ সুদ",
-    "totalPayment": "মুঠ পৰিশোধ"
-  },
-  "interestRatesPage": {
-    "title": "বৰ্তমানৰ সুদৰ হাৰ",
-    "loanCategory": "ঋণ শ্ৰেণী",
-    "rate": "সুদৰ হাৰ (বাৰ্ষিক)",
-    "updatedOn": "{{date}} তাৰিখে হাৰ আপডেট কৰা হৈছে"
-  },
-  "reportPage": {
-    "title": "ডেশ্বৰ্ড প্ৰতিবেদন ডাউনলোড কৰক",
-    "generateTitle": "PDF সাৰাংশ সৃষ্টি কৰক",
-    "description": "বৰ্তমানৰ ঋণ ডেশ্বৰ্ড তথ্যৰ PDF সাৰাংশ সৃষ্টি আৰু ডাউনলোড কৰিবলৈ তলৰ বুটামত ক্লিক কৰক।",
-    "infoText": "PDFত মুখ্য মেট্ৰিক, ঋণৰ প্ৰকাৰ অনুযায়ী সুদৰ হাৰ, আৰু বেংক-নিৰ্দিষ্ট ঋণ অফাৰ অন্তৰ্ভুক্ত থাকিব।",
-    "downloadButton": "PDF সৃষ্টি আৰু ডাউনলোড কৰক",
-    "imageAlt": "এটা বিত্তীয় প্ৰতিবেদনৰ শৈলীগত উপস্থাপন",
-    "imageCaption": "আপোনাৰ ব্যাপক ঋণ তথ্য, সাৰাংশিত।"
-  },
-  "footer": {
-    "copyRight": "© {{year}} LoanView. সকলো অধিকাৰ সংৰক্ষিত।"
-  },
-  "formValidation": {
-    "required": "এই ফিল্ডখন প্ৰয়োজনীয়।",
-    "invalidEmail": "অবৈধ ইমেইল ঠিকনা।",
-    "positiveNumber": "ধনাত্মক সংখ্যা হ'ব লাগিব।"
-  },
-  "pdf": {
-    "reportGenerated": "প্ৰতিবেদন সৃষ্টি কৰা হৈছে",
-    "page": "পৃষ্ঠা",
-    "years": "বছৰ",
-    "applicationSummary": {
-      "title": "ঋণ আবেদনৰ সাৰাংশ"
-    },
-    "keyFacts": {
-      "title": "मुख्य तथ्य विवरण"
-    },
-    "marketComparison": {
-      "title": "{{loanType}} ৰ বাবে বজাৰ তুলনা"
-    },
-    "loanSummary": {
-      "loanAmount": "ঋণৰ পৰিমাণ",
-      "principalAmount": "মূলধনৰ পৰিমাণ",
-      "interestRate": "বাৰ্ষিক সুদৰ হাৰ",
-      "tenure": "কাৰ্যকাল",
-      "monthlyEMI": "মাহিলী ইএমআই",
-      "totalInterest": "দেয় মুঠ সুদ",
-      "totalPayment": "মুঠ পৰিশোধ (মূলধন + সুদ)"
-    },
-    "paymentPlan": {
-      "title": "পৰিশোধ পৰিকল্পনা (এমৰ্টাইজেচন অনুসূচী)",
-      "month": "মাহ #",
-      "principal": "মূলধন",
-      "interest": "সুদ",
-      "totalPayment": "মুঠ পৰিশোধ",
-      "balance": "বাকী থকা পৰিমাণ"
-    },
-    "disclaimers": {
-      "title": "অস্বীকাৰ আৰু সতৰ্কবাণী",
-      "discrepancy": "অনুগ্ৰহ কৰি এই বিৱৰণ ভালদৰে চাওক। কোনো বিসংগতি থাকিলে বিৱৰণৰ তাৰিখৰ পৰা ৩০ দিনৰ ভিতৰত বেংকক জনাব লাগে।",
-      "fraudWarning": "প্ৰৱಂಚনা সতৰ্কবাণী: আপোনাৰ পিন, অ’টিপি, বা কোনো গোপনীয় বেংকিং বিৱৰণ কাৰো সৈতে শ্বেয়াৰ নকৰিব। বেংকে কেতিয়াও এই তথ্য নিবিচাৰে।"
-    },
-    "support": {
-      "title": "সমৰ্থন আৰু যোগাযোগৰ তথ্য",
-      "helpline": "গ্ৰাহক সমৰ্থন হেল্পলাইন"
-    },
-    "summary": "সাৰাংশ",
-    "dashboardMetrics": "ডেশ্বৰ্ড মেট্ৰিকসমূহ"
-  },
-  "currency": {
-    "inr": "টকা"
-  },
-  "N/A": "N/A"
-}
-```

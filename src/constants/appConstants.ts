@@ -245,3 +245,5 @@ export const RATE_THRESHOLDS = {
   medium: 12.0, // Rates > 9.0% and <= 12.0% are medium
   // Rates > 12.0% are high
 };
+
+    
