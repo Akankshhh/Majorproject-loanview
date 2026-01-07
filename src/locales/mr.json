@@ -4,7 +4,7 @@
   "nav": {
     "dashboard": "डॅशबोर्ड",
     "applyLoan": "कर्जासाठी अर्ज करा",
-    "compareAndCalculate": "तुलना करा आणि गणना करा",
+    "compareAndCalculate": "तुलना आणि गणना करा",
     "marketComparison": "बाजार तुलना",
     "interestRates": "व्याज दर",
     "emiCalculator": "EMI कॅल्क्युलेटर",
@@ -18,22 +18,22 @@
   "dashboard": {
     "title": "कर्ज डॅशबोर्ड",
     "totalLoans": "एकूण कर्ज",
-    "avgLoanSize": "सरासरी कर्जाचा आकार (INR)",
+    "avgLoanSize": "सरासरी कर्ज आकार (INR)",
     "approvalRate": "मंजुरी दर",
     "recentActivity": "अलीकडील क्रियाकलाप",
-    "noRecentActivity": "प्रदर्शित करण्यासाठी कोणताही अलीकडील क्रियाकलाप नाही.",
+    "noRecentActivity": "दाखवण्यासाठी कोणतीही अलीकडील क्रियाकलाप नाही.",
     "loanInterestRatesChart": {
-      "title": "कर्ज व्याज दरांचे विहंगावलोकन",
-      "description": "विविध प्रकारच्या कर्जांसाठी व्याज दरांची दृश्यात्मक तुलना।"
+      "title": "कर्ज व्याज दरांचा आढावा",
+      "description": "विविध प्रकारच्या कर्जांसाठी व्याज दरांची दृश्य तुलना."
     },
     "bankLoanRates": {
       "title": "बँक कर्ज ऑफर",
-      "description": "विविध बँकांकडून विविध कर्जांसाठी व्याज दरांची तुलना करा.",
+      "description": "विविध बँकांमधून विविध कर्जांसाठी व्याज दरांची तुलना करा.",
       "bankName": "बँकेचे नाव",
       "loanType": "कर्जाचा प्रकार",
       "interestRate": "व्याज दर (%)",
       "filters": {
-        "searchPlaceholder": "बँक किंवा कर्जाच्या प्रकारानुसार शोधा...",
+        "searchPlaceholder": "बँक किंवा कर्ज प्रकारानुसार शोधा...",
         "selectBank": "बँक निवडा",
         "allBanks": "सर्व बँका",
         "selectLoanType": "कर्जाचा प्रकार निवडा",
@@ -48,7 +48,7 @@
         "smallFinanceBank": "लघु वित्त बँक",
         "paymentBank": "पेमेंट बँक",
         "nbfc": "NBFC",
-        "foreignBank": "परदेशी बँक"
+        "foreignBank": "विदेशी बँक"
       },
       "downloadCsv": "CSV डाउनलोड करा",
       "tooltip": {
@@ -62,7 +62,7 @@
     "themeToggle": {
       "light": "लाईट मोडवर स्विच करा",
       "dark": "डार्क मोडवर स्विच करा",
-      "toggle": "थीम टॉगल करा"
+      "toggle": "थीम बदला"
     },
     "keyRateStatistics": {
       "title": "मुख्य दर आकडेवारी",
@@ -116,7 +116,7 @@
     "education": {
       "name": "शिक्षण कर्ज",
       "description": "आमच्या शिक्षण वित्तपुरवठ्यासह तुमच्या भविष्यात गुंतवणूक करा.",
-      "processingFee": "सामान्यतः 0.5-1%"
+      "processingFee": "साधारणपणे 0.5-1%"
     },
     "vehicle": {
       "name": "वाहन कर्ज",

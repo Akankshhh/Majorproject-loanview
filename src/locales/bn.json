@@ -282,7 +282,7 @@
   },
   "formValidation": {
     "required": "এই ক্ষেত্রটি প্রয়োজনীয়।",
-    "invalidEmail": "অবৈধ ইমেইল ঠিকানা।",
+    "invalidEmail": "অবৈধ ইমেল ঠিকানা।",
     "positiveNumber": "একটি ধনাত্মক সংখ্যা হতে হবে।",
     "minLength": "কমপক্ষে {{length}} অক্ষর হতে হবে।"
   },
@@ -365,7 +365,7 @@
     }
   },
   "currency": {
-    "inr": "টাকা"
+    "inr": "INR"
   },
   "N/A": "N/A"
 }

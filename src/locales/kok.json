@@ -2,366 +2,366 @@
 {
   "appName": "LoanView",
   "nav": {
-    "dashboard": "Dashboard",
-    "applyLoan": "Apply for Loan",
-    "compareAndCalculate": "Compare & Calculate",
-    "marketComparison": "Market Comparison",
-    "interestRates": "Interest Rates",
-    "emiCalculator": "EMI Calculator",
-    "downloadReport": "Download Report",
-    "viewApplications": "View Applications",
-    "bankingAdvisor": "Banking Advisor",
-    "login": "Login",
-    "profile": "Profile",
+    "dashboard": "डॅशबोर्ड",
+    "applyLoan": "कर्जासाठी अर्ज करा",
+    "compareAndCalculate": "तुलना आणि गणना करा",
+    "marketComparison": "बाजार तुलना",
+    "interestRates": "व्याज दर",
+    "emiCalculator": "EMI कॅल्क्युलेटर",
+    "downloadReport": "अहवाल डाउनलोड करा",
+    "viewApplications": "अर्ज पहा",
+    "bankingAdvisor": "बँकिंग सल्लागार",
+    "login": "लॉग इन करा",
+    "profile": "प्रोफाइल",
     "howToPlay": "कशें खेळचें"
   },
   "dashboard": {
-    "title": "Loan Dashboard",
-    "totalLoans": "Total Loans",
-    "avgLoanSize": "Average Loan Size (INR)",
-    "approvalRate": "Approval Rate",
-    "recentActivity": "Recent Activity",
-    "noRecentActivity": "No recent activity to display.",
+    "title": "कर्ज डॅशबोर्ड",
+    "totalLoans": "एकूण कर्ज",
+    "avgLoanSize": "सरासरी कर्ज आकार (INR)",
+    "approvalRate": "मंजुरी दर",
+    "recentActivity": "अलीकडील क्रियाकलाप",
+    "noRecentActivity": "दाखवण्यासाठी कोणतीही अलीकडील क्रियाकलाप नाही.",
     "loanInterestRatesChart": {
-      "title": "Loan Interest Rates Overview",
-      "description": "A visual comparison of interest rates for different loan types."
+      "title": "कर्ज व्याज दरांचा आढावा",
+      "description": "विविध प्रकारच्या कर्जांसाठी व्याज दरांची दृश्य तुलना."
     },
     "bankLoanRates": {
-      "title": "Bank Loan Offerings",
-      "description": "Compare interest rates for various loans from different banks.",
-      "bankName": "Bank Name",
-      "loanType": "Loan Type",
-      "interestRate": "Interest Rate (%)",
+      "title": "बँक कर्ज ऑफर",
+      "description": "विविध बँकांमधून विविध कर्जांसाठी व्याज दरांची तुलना करा.",
+      "bankName": "बँकेचे नाव",
+      "loanType": "कर्जाचा प्रकार",
+      "interestRate": "व्याज दर (%)",
       "filters": {
-        "searchPlaceholder": "Search by bank or loan type...",
-        "selectBank": "Select Bank",
-        "allBanks": "All Banks",
-        "selectLoanType": "Select Loan Type",
-        "allLoanTypes": "All Loan Types",
-        "interestRateRange": "Interest Rate Range",
-        "minRate": "Min Rate",
-        "maxRate": "Max Rate",
-        "selectBankCategory": "Select Bank Category",
-        "allBankCategories": "All Categories",
-        "publicSector": "Public Sector",
-        "privateSector": "Private Sector",
-        "smallFinanceBank": "Small Finance Bank",
-        "paymentBank": "Payment Bank",
+        "searchPlaceholder": "बँक किंवा कर्ज प्रकारानुसार शोधा...",
+        "selectBank": "बँक निवडा",
+        "allBanks": "सर्व बँका",
+        "selectLoanType": "कर्जाचा प्रकार निवडा",
+        "allLoanTypes": "सर्व कर्जाचे प्रकार",
+        "interestRateRange": "व्याज दर श्रेणी",
+        "minRate": "किमान दर",
+        "maxRate": "कमाल दर",
+        "selectBankCategory": "बँक श्रेणी निवडा",
+        "allBankCategories": "सर्व श्रेणी",
+        "publicSector": "सार्वजनिक क्षेत्र",
+        "privateSector": "खाजगी क्षेत्र",
+        "smallFinanceBank": "लघु वित्त बँक",
+        "paymentBank": "पेमेंट बँक",
         "nbfc": "NBFC",
-        "foreignBank": "Foreign Bank"
+        "foreignBank": "विदेशी बँक"
       },
-      "downloadCsv": "Download CSV",
+      "downloadCsv": "CSV डाउनलोड करा",
       "tooltip": {
-        "tenure": "Tenure: {{min}} - {{max}} months",
-        "maxAmount": "Max Amount: {{amount}}",
-        "processingFee": "Processing Fee: {{fee}}",
-        "rateType": "Rate Type: {{type}}"
+        "tenure": "कालावधी: {{min}} - {{max}} महिने",
+        "maxAmount": "कमाल रक्कम: {{amount}}",
+        "processingFee": "प्रक्रिया शुल्क: {{fee}}",
+        "rateType": "दर प्रकार: {{type}}"
       },
-      "noResults": "No loan products match your current filters."
+      "noResults": "तुमच्या वर्तमान फिल्टरशी जुळणारे कोणतेही कर्ज उत्पादन नाही."
     },
     "themeToggle": {
-      "light": "Switch to Light Mode",
-      "dark": "Switch to Dark Mode",
-      "toggle": "Toggle theme"
+      "light": "लाईट मोडवर स्विच करा",
+      "dark": "डार्क मोडवर स्विच करा",
+      "toggle": "थीम बदला"
     },
     "keyRateStatistics": {
-      "title": "Key Rate Statistics",
-      "description": "Summary of interest rates based on current filters.",
-      "overallAvgRate": "Overall Avg. Rate",
-      "overallMinRate": "Overall Min. Rate",
-      "overallMaxRate": "Overall Max. Rate",
-      "lowestAvgRateLoanType": "Most Competitive Loan Type",
-      "highestAvgRateLoanType": "Most Expensive Loan Type",
-      "avgRateSuffix": "Avg. Rate",
-      "noData": "Not enough data for statistics."
+      "title": "मुख्य दर आकडेवारी",
+      "description": "सध्याच्या फिल्टरवर आधारित व्याज दरांचा सारांश.",
+      "overallAvgRate": "एकूण सरासरी दर",
+      "overallMinRate": "एकूण किमान दर",
+      "overallMaxRate": "एकूण कमाल दर",
+      "lowestAvgRateLoanType": "सर्वात स्पर्धात्मक कर्ज प्रकार",
+      "highestAvgRateLoanType": "सर्वात महाग कर्ज प्रकार",
+      "avgRateSuffix": "सरासरी दर",
+      "noData": "आकडेवारीसाठी पुरेसा डेटा नाही."
     },
     "bankRatesComparisonChart": {
-      "title": "Visual Comparison",
-      "description": "Select a loan type to see how interest rates compare across different banks.",
-      "selectLoanTypePlaceholder": "Select a Loan Type to Compare",
-      "noData": "No data available for the selected loan type and filters.",
-      "yAxisLabel": "Interest Rate (%)"
+      "title": "दृश्य तुलना",
+      "description": "विविध बँकांमध्ये व्याज दर कसे तुलना करतात हे पाहण्यासाठी कर्जाचा प्रकार निवडा.",
+      "selectLoanTypePlaceholder": "तुलना करण्यासाठी कर्जाचा प्रकार निवडा",
+      "noData": "निवडलेल्या कर्ज प्रकारासाठी आणि फिल्टरसाठी कोणताही डेटा उपलब्ध नाही.",
+      "yAxisLabel": "व्याज दर (%)"
     }
   },
   "marketComparison": {
-    "fullMarketComparison": "Full Market Comparison",
-    "totalProducts": "Total Products",
-    "avgInterestRate": "Average Interest Rate",
-    "bankWithMostOfferings": "Bank with Most Offerings",
-    "description": "A complete overview of every loan product offered by our partner banks. Sort by any column to find the best option for you.",
-    "processingFee": "Processing Fee"
+    "fullMarketComparison": "पूर्ण बाजार तुलना",
+    "totalProducts": "एकूण उत्पादने",
+    "avgInterestRate": "सरासरी व्याज दर",
+    "bankWithMostOfferings": "सर्वात जास्त ऑफर्स असलेली बँक",
+    "description": "आमच्या भागीदार बँकांद्वारे ऑफर केलेल्या प्रत्येक कर्ज उत्पादनाची संपूर्ण माहिती. तुमच्यासाठी सर्वोत्तम पर्याय शोधण्यासाठी कोणत्याही कॉलमद्वारे क्रमवारी लावा.",
+    "processingFee": "प्रक्रिया शुल्क"
   },
   "liveMarketAnalysis": {
-    "title": "Market Comparison",
-    "description": "Select a loan type to compare real-time offers from top Indian banks.",
-    "bank": "Bank",
-    "loanType": "Loan Type",
-    "interestRate": "Interest Rate (p.a.)",
-    "estMonthlyEMI": "Est. Monthly EMI",
-    "whyChooseThis": "Why Choose This?",
-    "action": "Action",
-    "applyNow": "Apply Now"
+    "title": "बाजार तुलना",
+    "description": "शीर्ष भारतीय बँकांकडून रिअल-टाइम ऑफरची तुलना करण्यासाठी कर्ज प्रकार निवडा.",
+    "bank": "बँक",
+    "loanType": "कर्जाचा प्रकार",
+    "interestRate": "व्याज दर (वार्षिक)",
+    "estMonthlyEMI": "अंदाजे मासिक EMI",
+    "whyChooseThis": "हे का निवडावे?",
+    "action": "क्रिया",
+    "applyNow": "आता अर्ज करा"
   },
   "loanTypes": {
     "home": {
-      "name": "Home Loan",
-      "description": "Finance your dream home with competitive rates.",
-      "processingFee": "Up to 1% of loan amount"
+      "name": "गृह कर्ज",
+      "description": "स्पर्धात्मक दरांवर तुमच्या स्वप्नातील घरासाठी वित्तपुरवठा करा.",
+      "processingFee": "कर्ज रकमेच्या 1% पर्यंत"
     },
     "personal": {
-      "name": "Personal Loan",
-      "description": "Flexible loans for your personal needs.",
-      "processingFee": "1-2% of loan amount"
+      "name": "वैयक्तिक कर्ज",
+      "description": "तुमच्या वैयक्तिक गरजांसाठी लवचिक कर्ज.",
+      "processingFee": "कर्ज रकमेच्या 1-2%"
     },
     "education": {
-      "name": "Education Loan",
-      "description": "Invest in your future with our education financing.",
-      "processingFee": "Typically 0.5-1%"
+      "name": "शिक्षण कर्ज",
+      "description": "आमच्या शिक्षण वित्तपुरवठ्यासह तुमच्या भविष्यात गुंतवणूक करा.",
+      "processingFee": "साधारणपणे 0.5-1%"
     },
     "vehicle": {
-      "name": "Vehicle Loan",
-      "description": "Get on the road with our attractive vehicle loans.",
-      "processingFee": "Up to 1.5% of loan amount"
+      "name": "वाहन कर्ज",
+      "description": "आमच्या आकर्षक वाहन कर्जासह रस्त्यावर उतरा.",
+      "processingFee": "कर्ज रकमेच्या 1.5% पर्यंत"
     },
     "business": {
-      "name": "Business Loan",
-      "description": "Fuel your business growth with our tailored loans.",
-      "processingFee": "1-2.5% of loan amount, subject to terms"
+      "name": "व्यवसाय कर्ज",
+      "description": "आमच्या तयार केलेल्या कर्जासह तुमच्या व्यवसायाच्या वाढीला चालना द्या.",
+      "processingFee": "कर्ज रकमेच्या 1-2.5%, अटींच्या अधीन"
     },
     "gold": {
-      "name": "Gold Loan",
-      "description": "Leverage your gold assets for immediate financial needs.",
-      "processingFee": "0.5-1.5% of loan amount"
+      "name": "सुवर्ण कर्ज",
+      "description": "त्वरित आर्थिक गरजांसाठी तुमच्या सोन्याच्या मालमत्तेचा लाभ घ्या.",
+      "processingFee": "कर्ज रकमेच्या 0.5-1.5%"
     },
     "rateTypes": {
-      "fixed": "Fixed",
-      "floating": "Floating"
+      "fixed": "स्थिर",
+      "floating": "अस्थिर"
     }
   },
   "banks": {
     "sbi": {
-      "reason": "Best for lowest interest rates and government trust. Special concessions for women borrowers."
+      "reason": "सर्वात कमी व्याज दर आणि सरकारी विश्वासासाठी सर्वोत्तम. महिला कर्जदारांसाठी विशेष सवलती."
     },
     "hdfc": {
-      "reason": "Best for speed. Digital approval in 10 minutes for pre-approved customers. Minimal documentation."
+      "reason": "वेगवानतेसाठी सर्वोत्तम. पूर्व-मंजूर ग्राहकांसाठी 10 मिनिटांत डिजिटल मंजुरी. किमान कागदपत्रे."
     },
     "icici": {
-      "reason": "Excellent mobile app interface and flexible tenure options. Good for self-employed individuals."
+      "reason": "उत्कृष्ट मोबाइल अॅप इंटरफेस आणि लवचिक कालावधी पर्याय. स्वयंरोजगारित व्यक्तींसाठी चांगले."
     },
     "axis": {
-      "reason": "Offers 'Holiday Period' (EMI waivers) on specific products. Good for those expecting future cash flow."
+      "reason": "विशिष्ट उत्पादनांवर 'हॉलिडे पीरियड' (EMI माफी) ऑफर करते. भविष्यात रोख प्रवाह अपेक्षित असलेल्यांसाठी चांगले."
     },
     "pnb": {
-      "reason": "Strong rural presence and special schemes for agricultural loans."
+      "reason": "मजबूत ग्रामीण उपस्थिती आणि कृषी कर्जासाठी विशेष योजना."
     },
     "kotak": {
-      "reason": "Competitive rates for high credit score applicants (750+). Personalized doorstep service."
+      "reason": "उच्च क्रेडिट स्कोअर अर्जदारांसाठी (750+) स्पर्धात्मक दर. वैयक्तिकृत डोअरस्टेप सेवा."
     },
     "bob": {
-      "reason": "Good rates for vehicle loans and a wide network of branches."
+      "reason": "वाहन कर्जासाठी चांगले दर आणि शाखांचे विस्तृत जाळे."
     }
   },
   "loanApplication": {
-    "title": "Loan Application",
+    "title": "कर्ज अर्ज",
     "steps": {
-      "personalDetails": "Personal Details",
-      "incomeDetails": "Income Details",
-      "documentUpload": "Document Upload",
-      "reviewSubmit": "Review & Submit"
+      "personalDetails": "वैयक्तिक तपशील",
+      "incomeDetails": "उत्पन्न तपशील",
+      "documentUpload": "दस्तऐवज अपलोड",
+      "reviewSubmit": "पुनरावलोकन करा आणि सबमिट करा"
     },
-    "next": "Next",
-    "previous": "Previous",
-    "submit": "Submit Application",
+    "next": "पुढील",
+    "previous": "मागील",
+    "submit": "अर्ज सबमिट करा",
     "personalDetailsForm": {
-      "fullNamePlaceholder": "Enter your full name"
+      "fullNamePlaceholder": "तुमचे पूर्ण नाव प्रविष्ट करा"
     },
     "reviewSubmitForm": {
-      "reviewDetails": "Please review your application details before submitting.",
-      "submitting": "Submitting...",
-      "loading": "Loading details..."
+      "reviewDetails": "सबमिट करण्यापूर्वी कृपया तुमच्या अर्जाच्या तपशीलांचे पुनरावलोकन करा.",
+      "submitting": "सबमिट करत आहे...",
+      "loading": "तपशील लोड करत आहे..."
     },
-    "applicationSubmitted": "Application Submitted!",
-    "applicationSubmittedDesc": "Your loan application has been successfully submitted. We will contact you shortly."
+    "applicationSubmitted": "अर्ज सबमिट झाला!",
+    "applicationSubmittedDesc": "तुमचा कर्ज अर्ज यशस्वीरित्या सबमिट झाला आहे. आम्ही लवकरच तुमच्याशी संपर्क साधू."
   },
   "applicationForm": {
-    "title": "Loan Application Form",
-    "formTitle": "Loan Application Details",
-    "formDescription": "Please fill out all sections accurately and completely.",
-    "submitButton": "Save & Submit Application",
+    "title": "कर्ज अर्ज फॉर्म",
+    "formTitle": "कर्ज अर्ज तपशील",
+    "formDescription": "कृपया सर्व विभाग अचूक आणि पूर्णपणे भरा.",
+    "submitButton": "सेव्ह करा आणि अर्ज सबमिट करा",
     "sections": {
       "personalDetails": {
-        "title": "1. Personal Details",
-        "fullName": "Full Name",
-        "fatherHusbandName": "Father's / Husband's Name",
-        "dob": "Date of Birth / Age",
-        "gender": "Gender",
-        "maritalStatus": "Marital Status",
-        "currentAddress": "Address (Current)",
-        "permanentAddress": "Address (Permanent)",
-        "phone": "Phone Number",
-        "email": "Email",
-        "photo": "Photo (Upload)",
-        "idNumber": "Aadhaar / Voter ID / PAN Number"
+        "title": "1. वैयक्तिक तपशील",
+        "fullName": "पूर्ण नाव",
+        "fatherHusbandName": "वडिलांचे / पतीचे नाव",
+        "dob": "जन्मतारीख / वय",
+        "gender": "लिंग",
+        "maritalStatus": "वैवाहिक स्थिती",
+        "currentAddress": "सध्याचा पत्ता",
+        "permanentAddress": "कायमचा पत्ता",
+        "phone": "फोन नंबर",
+        "email": "ईमेल",
+        "photo": "फोटो (अपलोड)",
+        "idNumber": "आधार / मतदार ओळखपत्र / पॅन नंबर"
       },
       "loanRequirement": {
-        "title": "2. Loan Requirement",
-        "purpose": "Purpose of Loan",
-        "amount": "Loan Amount Needed",
-        "repaymentPeriod": "Preferred Repayment Period",
-        "loanType": "Type of Loan"
+        "title": "2. कर्जाची आवश्यकता",
+        "purpose": "कर्जाचा उद्देश",
+        "amount": "आवश्यक कर्जाची रक्कम",
+        "repaymentPeriod": "पसंतीचा परतफेड कालावधी",
+        "loanType": "कर्जाचा प्रकार"
       }
     }
   },
   "compareLoans": {
-    "title": "Compare Loan Options",
-    "loanTypeComparison": "Loan Type Comparison",
-    "loanType": "Loan Type",
-    "interestRate": "Interest Rate",
-    "maxTenure": "Max Tenure (Yrs)",
-    "maxAmount": "Max Amount (INR)",
-    "calculateEMI": "Calculate EMI",
-    "selectForEMI": "Select for EMI Calc",
-    "loanAmount": "Loan Amount",
-    "loanTenure": "Loan Tenure (Months)",
-    "monthlyEMI": "Monthly EMI",
-    "enterAllDetails": "Please enter Loan Amount, Tenure, and select/enter an Interest Rate.",
-    "clickToCalculateEMI": "Click 'Calculate' to see the monthly payment and save for your report.",
-    "usingSelectedRate": "Using selected loan type rate: {{rate}}%",
-    "selectOrEnterRate": "Select a loan type from the table above or enter an interest rate manually.",
-    "calculateEMIButton": "Calculate & Save for Report",
-    "calculationSavedTitle": "Calculation Saved",
-    "calculationSavedDesc": "Your EMI calculation details have been saved for the PDF report.",
-    "emiDetails": "Repayment Summary",
-    "loanRepaymentBreakdown": "Loan Repayment Breakdown",
-    "principalAmount": "Principal Amount",
-    "totalInterest": "Total Interest",
-    "totalPayment": "Total Payment"
+    "title": "कर्ज पर्यायांची तुलना करा",
+    "loanTypeComparison": "कर्ज प्रकारांची तुलना",
+    "loanType": "कर्जाचा प्रकार",
+    "interestRate": "व्याज दर",
+    "maxTenure": "कमाल कालावधी (वर्षे)",
+    "maxAmount": "कमाल रक्कम (INR)",
+    "calculateEMI": "EMI गणना करा",
+    "selectForEMI": "EMI गणनेसाठी निवडा",
+    "loanAmount": "कर्ज रक्कम",
+    "loanTenure": "कर्ज कालावधी (महिने)",
+    "monthlyEMI": "मासिक EMI",
+    "enterAllDetails": "कृपया कर्ज रक्कम, कालावधी प्रविष्ट करा आणि व्याज दर निवडा/प्रविष्ट करा.",
+    "clickToCalculateEMI": "मासिक पेमेंट पाहण्यासाठी आणि तुमच्या अहवालासाठी सेव्ह करण्यासाठी 'गणना करा' वर क्लिक करा.",
+    "usingSelectedRate": "निवडलेल्या कर्ज प्रकाराचा दर वापरून: {{rate}}%",
+    "selectOrEnterRate": "वरील टेबलमधून कर्जाचा प्रकार निवडा किंवा व्यक्तिचलितपणे व्याज दर प्रविष्ट करा.",
+    "calculateEMIButton": "गणना करा आणि अहवालासाठी सेव्ह करा",
+    "calculationSavedTitle": "गणना सेव्ह झाली",
+    "calculationSavedDesc": "तुमचे EMI गणनेचे तपशील PDF अहवालासाठी सेव्ह केले गेले आहेत.",
+    "emiDetails": "परतफेड सारांश",
+    "loanRepaymentBreakdown": "कर्ज परतफेड तपशील",
+    "principalAmount": "मुद्दल रक्कम",
+    "totalInterest": "एकूण व्याज",
+    "totalPayment": "एकूण परतफेड"
   },
   "emiCalculator": {
-    "title": "EMI Calculator",
-    "calculatorTitle": "Loan Repayment Calculator",
-    "calculatorDescription": "Enter your loan details to calculate your monthly payment and see a full amortization schedule.",
-    "tenureInYears": "Tenure (Yrs)",
-    "emiOptionsTitle": "EMI Options for Different Tenures",
-    "emiOptionsDescription": "Based on a loan amount of {{amount}} at {{rate}}% interest.",
-    "amortizationDescription": "This table shows the breakdown of each monthly payment into principal and interest over the entire loan tenure."
+    "title": "EMI कॅल्क्युलेटर",
+    "calculatorTitle": "कर्ज परतफेड कॅल्क्युलेटर",
+    "calculatorDescription": "तुमचे मासिक पेमेंट मोजण्यासाठी आणि संपूर्ण परतफेड वेळापत्रक पाहण्यासाठी तुमच्या कर्जाचे तपशील प्रविष्ट करा.",
+    "tenureInYears": "कालावधी (वर्षे)",
+    "emiOptionsTitle": "वेगवेगळ्या कालावधीसाठी EMI पर्याय",
+    "emiOptionsDescription": "{{rate}}% व्याज दराने {{amount}} कर्ज रकमेवर आधारित.",
+    "amortizationDescription": "ही सारणी संपूर्ण कर्ज कालावधीत प्रत्येक मासिक पेमेंटचे मुद्दल आणि व्याजामध्ये विभाजन दर्शवते."
   },
   "viewApplications": {
-    "noApplicationsTitle": "No Saved Applications",
-    "noApplicationsDesc": "'Apply for Loan' ਫਾਰਮ ਤੋਂ ਜਮ੍ਹਾਂ ਕੀਤੀਆਂ ਅਰਜ਼ੀਆਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।",
-    "submittedOn": "Submitted on",
-    "purpose": "Purpose",
-    "delete": "Delete",
-    "saveSuccess": "Your application has been saved to your profile and can be viewed on this page.",
-    "submitAnother": "Submit Another Application",
-    "clearAll": "Clear All Applications",
-    "confirmClearAll": "Are you sure you want to delete all saved applications? This action cannot be undone.",
-    "confirmDelete": "Are you sure you want to delete this application?",
-    "deleteSuccess": "Application deleted successfully.",
-    "deleteError": "Failed to delete application."
+    "noApplicationsTitle": "कोणतेही जतन केलेले अर्ज नाहीत",
+    "noApplicationsDesc": "'कर्जासाठी अर्ज करा' फॉर्ममधून सबमिट केलेले अर्ज येथे दिसतील.",
+    "submittedOn": "सबमिट केले",
+    "purpose": "उद्देश",
+    "delete": "हटवा",
+    "saveSuccess": "तुमचा अर्ज तुमच्या प्रोफाइलमध्ये सेव्ह झाला आहे आणि या पृष्ठावर पाहिला जाऊ शकतो.",
+    "submitAnother": "दुसरा अर्ज सबमिट करा",
+    "clearAll": "सर्व अर्ज साफ करा",
+    "confirmClearAll": "तुम्ही खात्रीने सर्व जतन केलेले अर्ज हटवू इच्छिता? ही क्रिया पूर्ववत केली जाऊ शकत नाही.",
+    "confirmDelete": "तुम्ही खात्रीने हा अर्ज हटवू इच्छिता?",
+    "deleteSuccess": "अर्ज यशस्वीरित्या हटवला गेला.",
+    "deleteError": "अर्ज हटवण्यात अयशस्वी."
   },
   "interestRatesPage": {
-    "title": "Current Interest Rates",
-    "loanCategory": "Loan Category",
-    "rate": "Interest Rate (p.a.)",
-    "updatedOn": "Rates updated on {{date}}"
+    "title": "सध्याचे व्याज दर",
+    "loanCategory": "कर्ज श्रेणी",
+    "rate": "व्याज दर (वार्षिक)",
+    "updatedOn": "{{date}} रोजी दर अद्यतनित केले"
   },
   "reportPage": {
-    "title": "Download Loan Report",
-    "generateTitle": "Generate Loan Report",
-    "description": "Generate a PDF report based on your calculated loan data from the 'Compare & Calculate' page and your latest detailed application.",
-    "infoText_v1": "The report will use loan details you last calculated on the 'Compare & Calculate' page.",
-    "infoText_v2": "No loan data calculated yet. Please go to the 'Compare & Calculate' page to calculate your EMI. The report will be generated using sample data.",
-    "infoText_v3_application": "It will also include details from your most recently saved detailed application.",
-    "infoText_v3_no_application": "No detailed application has been saved yet. You can save one from the 'Apply for Loan' page.",
-    "downloadButton_v1": "Download Your Loan Report",
-    "downloadButton_v2": "Download Sample Report"
+    "title": "कर्ज अहवाल डाउनलोड करा",
+    "generateTitle": "कर्ज अहवाल तयार करा",
+    "description": "'तुलना करा आणि गणना करा' पृष्ठावरून तुमच्या गणना केलेल्या कर्ज डेटावर आणि तुमच्या नवीनतम तपशीलवार अर्जावर आधारित एक PDF अहवाल तयार करा.",
+    "infoText_v1": "अहवाल 'तुलना करा आणि गणना करा' पृष्ठावर तुम्ही शेवटच्या वेळी गणना केलेल्या कर्ज तपशीलांचा वापर करेल.",
+    "infoText_v2": "अद्याप कोणताही कर्ज डेटा मोजला गेला नाही. कृपया तुमची EMI मोजण्यासाठी 'तुलना करा आणि गणना करा' पृष्ठावर जा. नमुना डेटा वापरून अहवाल तयार केला जाईल.",
+    "infoText_v3_application": "त्यात तुमच्या अलीकडेच सेव्ह केलेल्या तपशीलवार अर्जाचे तपशील देखील असतील.",
+    "infoText_v3_no_application": "अद्याप कोणताही तपशीलवार अर्ज सेव्ह केलेला नाही. तुम्ही 'कर्जासाठी अर्ज करा' पृष्ठावरून एक सेव्ह करू शकता.",
+    "downloadButton_v1": "तुमचा कर्ज अहवाल डाउनलोड करा",
+    "downloadButton_v2": "नमुना अहवाल डाउनलोड करा"
   },
   "footer": {
-    "copyRight": "© {{year}} LoanView. All rights reserved."
+    "copyRight": "© {{year}} LoanView. सर्व हक्क राखीव."
   },
   "formValidation": {
-    "required": "This field is required.",
-    "invalidEmail": "Invalid email address.",
-    "positiveNumber": "Must be a positive number.",
-    "minLength": "Must be at least {{length}} characters."
+    "required": "हे क्षेत्र आवश्यक आहे.",
+    "invalidEmail": "अवैध ईमेल पत्ता.",
+    "positiveNumber": "धन संख्या असणे आवश्यक आहे.",
+    "minLength": "किमान {{length}} वर्ण असणे आवश्यक आहे."
   },
   "login": {
-    "title": "Sign In to your Account",
-    "description": "Enter your credentials to access your dashboard.",
-    "emailLabel": "Email",
-    "passwordLabel": "Password",
-    "signInButton": "Sign In",
-    "signOutButton": "Sign Out",
-    "signingIn": "Signing In...",
-    "signInSuccessTitle": "Sign In Successful",
-    "signInSuccessDesc": "Welcome back! Redirecting you to the dashboard.",
-    "signInFailed": "Sign-in Failed",
-    "signUp": "Sign Up",
-    "createAccount": "Create an Account",
-    "signUpDescription": "Enter your details to create a new account.",
-    "signUpSuccess": "Account Created!",
-    "signUpSuccessDesc": "You have been successfully signed up and logged in.",
-    "signUpFailed": "Sign-up Failed",
-    "creatingAccount": "Creating Account..."
+    "title": "आपल्या खात्यात साइन इन करा",
+    "description": "आपल्या डॅशबोर्डमध्ये प्रवेश करण्यासाठी आपले क्रेडेन्शियल्स प्रविष्ट करा.",
+    "emailLabel": "ईमेल",
+    "passwordLabel": "पासवर्ड",
+    "signInButton": "साइन इन करा",
+    "signOutButton": "साइन आउट",
+    "signingIn": "साइन इन करत आहे...",
+    "signInSuccessTitle": "साइन इन यशस्वी",
+    "signInSuccessDesc": "पुन्हा स्वागत आहे! तुम्हाला डॅशबोर्डवर पुनर्निर्देशित करत आहे.",
+    "signInFailed": "साइन-इन अयशस्वी",
+    "signUp": "साइन अप करा",
+    "createAccount": "एक खाते तयार करा",
+    "signUpDescription": "नवीन खाते तयार करण्यासाठी आपले तपशील प्रविष्ट करा.",
+    "signUpSuccess": "खाते तयार झाले!",
+    "signUpSuccessDesc": "तुम्ही यशस्वीरित्या साइन अप केले आहे आणि लॉग इन केले आहे.",
+    "signUpFailed": "साइन-अप अयशस्वी",
+    "creatingAccount": "खाते तयार करत आहे..."
   },
   "profilePage": {
-    "title": "User Profile",
-    "description": "View and manage your profile information.",
-    "updateSuccess": "Profile updated successfully!",
-    "updateError": "Failed to update profile.",
-    "personalInfo": "Personal Information",
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "phoneNumber": "Phone Number",
-    "address": "Address",
-    "saveChanges": "Save Changes",
-    "saving": "Saving..."
+    "title": "वापरकर्ता प्रोफाइल",
+    "description": "तुमची प्रोफाइल माहिती पहा आणि व्यवस्थापित करा.",
+    "updateSuccess": "प्रोफाइल यशस्वीरित्या अद्यतनित केले!",
+    "updateError": "प्रोफाइल अद्यतनित करण्यात अयशस्वी.",
+    "personalInfo": "वैयक्तिक माहिती",
+    "firstName": "पहिले नाव",
+    "lastName": "आडनाव",
+    "phoneNumber": "फोन नंबर",
+    "address": "पत्ता",
+    "saveChanges": "बदल जतन करा",
+    "saving": "जतन करत आहे..."
   },
   "pdf": {
-    "loadingReport": "Loading report data...",
-    "reportGenerated": "Report Generated on",
-    "page": "Page",
-    "years": "Years",
+    "loadingReport": "रिपोर्ट डेटा लोड होत आहे...",
+    "reportGenerated": "अहवाल तयार केला",
+    "page": "पृष्ठ",
+    "years": "वर्षे",
     "applicationSummary": {
-      "title": "Loan Application Summary"
+      "title": "कर्ज अर्जाचा सारांश"
     },
     "keyFacts": {
-      "title": "Key Facts Statement"
+      "title": "मुख्य तथ्ये विधान"
     },
     "marketComparison": {
-      "title": "Market Comparison for {{loanType}}"
+      "title": "{{loanType}} साठी बाजारपेठ तुलना"
     },
     "loanSummary": {
-      "loanAmount": "Loan Amount",
-      "principalAmount": "Principal Amount",
-      "interestRate": "Annual Interest Rate",
-      "tenure": "Tenure",
-      "monthlyEMI": "Monthly EMI",
-      "totalInterest": "Total Interest Payable",
-      "totalPayment": "Total Payment (Principal + Interest)"
+      "loanAmount": "कर्जाची रक्कम",
+      "principalAmount": "मुद्दल रक्कम",
+      "interestRate": "वार्षिक व्याज दर",
+      "tenure": "कालावधी",
+      "monthlyEMI": "मासिक EMI",
+      "totalInterest": "एकूण देय व्याज",
+      "totalPayment": "एकूण परतफेड (मुद्दल + व्याज)"
     },
     "paymentPlan": {
-      "title": "Payment Plan (Amortization Schedule)",
-      "month": "Month #",
-      "principal": "Principal",
-      "interest": "Interest",
-      "totalPayment": "Total Payment",
-      "balance": "Remaining Balance"
+      "title": "परतफेड योजना (अमोर्टायझेशन शेड्यूल)",
+      "month": "महिना #",
+      "principal": "मुद्दल",
+      "interest": "व्याज",
+      "totalPayment": "एकूण परतफेड",
+      "balance": "शिल्लक रक्कम"
     },
     "nextSteps": {
-      "title": "Next Steps & Recommendations",
-      "contactBank": "1. Contact the banks with the most favorable rates from the 'Market Comparison' section to confirm their offers.",
-      "prepareDocuments": "2. Prepare necessary documents such as ID proof, address proof, and income statements for a faster application process."
+      "title": "पुढील पायऱ्या आणि शिफारसी",
+      "contactBank": "1. 'बाजारपेठ तुलना' विभागातून सर्वात अनुकूल दरांसह बँकांशी संपर्क साधून त्यांच्या ऑफरची पुष्टी करा.",
+      "prepareDocuments": "2. जलद अर्ज प्रक्रियेसाठी ओळखपत्र, पत्त्याचा पुरावा आणि उत्पन्नाचे विवरण यासारखी आवश्यक कागदपत्रे तयार करा."
     },
     "disclaimers": {
-      "title": "Disclaimers and Alerts",
-      "discrepancy": "Please review this statement carefully. Any discrepancy should be reported to the bank within 30 days of the statement date.",
-      "fraudWarning": "Fraud Alert: Do not share your PIN, OTP, or any confidential banking details with anyone. The bank never asks for this information."
+      "title": "अस्वीकरण आणि सूचना",
+      "discrepancy": "कृपया या विवरणाची काळजीपूर्वक समीक्षा करा. कोणतीही तफावत विवरणाच्या तारखेपासून 30 दिवसांच्या आत बँकेला कळवावी.",
+      "fraudWarning": "फसवणूक सूचना: तुमचा पिन, ओटीपी किंवा कोणतीही गोपनीय बँकिंग माहिती कोणाशीही शेअर करू नका. बँक कधीही ही माहिती विचारत नाही."
     },
     "support": {
-      "title": "Support & Contact Information",
-      "helpline": "Customer Support Helpline"
+      "title": "समर्थन आणि संपर्क माहिती",
+      "helpline": "ग्राहक समर्थन हेल्पलाइन"
     }
   },
   "currency": {
