@@ -12,8 +12,7 @@
     "viewApplications": "View Applications",
     "bankingAdvisor": "Banking Advisor",
     "login": "Login",
-    "profile": "Profile",
-    "howToPlay": "کِتھ پٲٹھؠ گِننہٕ"
+    "profile": "Profile"
   },
   "dashboard": {
     "title": "Loan Dashboard",
@@ -362,7 +361,8 @@
     "support": {
       "title": "Support & Contact Information",
       "helpline": "Customer Support Helpline"
-    }
+    },
+    "dashboardMetrics": "Dashboard Metrics"
   },
   "currency": {
     "inr": "INR"

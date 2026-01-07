@@ -43,7 +43,6 @@ export const NAV_ITEMS: NavItem[] = [
   { href: '/ai-advisor', labelKey: 'nav.bankingAdvisor', icon: Sparkles },
   { href: '/report', labelKey: 'nav.downloadReport', icon: FileDown },
   { href: '/profile', labelKey: 'nav.profile', icon: UserCircle },
-  { href: '/how-to-play', labelKey: 'nav.howToPlay', icon: HelpCircle },
 ];
 
 export const DASHBOARD_METRICS: LoanMetric[] = [

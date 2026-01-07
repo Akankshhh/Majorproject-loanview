@@ -12,8 +12,7 @@
     "viewApplications": "Ver Solicitudes",
     "bankingAdvisor": "Asesor Bancario IA",
     "login": "Iniciar Sesión",
-    "profile": "Perfil",
-    "howToPlay": "Cómo Jugar"
+    "profile": "Perfil"
   },
   "dashboard": {
     "title": "Tablero de Préstamos",
@@ -96,7 +95,7 @@
     "description": "Seleccione un tipo de préstamo para comparar ofertas en tiempo real de los principales bancos de la India.",
     "bank": "Banco",
     "loanType": "Tipo de Préstamo",
-    "interestRate": "Tasa de Interés (p.a.)",
+    "interestRate": "Tasa de Interés (anual)",
     "estMonthlyEMI": "EMI Mensual Est.",
     "whyChooseThis": "¿Por Qué Elegir Esto?",
     "action": "Acción",

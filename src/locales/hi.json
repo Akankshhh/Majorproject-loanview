@@ -12,8 +12,7 @@
     "viewApplications": "आवेदन देखें",
     "bankingAdvisor": "बैंकिंग सलाहकार",
     "login": "लॉग इन करें",
-    "profile": "प्रोफ़ाइल",
-    "howToPlay": "कैसे खेलें"
+    "profile": "प्रोफ़ाइल"
   },
   "dashboard": {
     "title": "ऋण डैशबोर्ड",
@@ -362,7 +361,8 @@
     "support": {
       "title": "समर्थन और संपर्क जानकारी",
       "helpline": "ग्राहक सहायता हेल्पलाइन"
-    }
+    },
+    "dashboardMetrics": "डैशबोर्ड मेट्रिक्स"
   },
   "currency": {
     "inr": "INR"

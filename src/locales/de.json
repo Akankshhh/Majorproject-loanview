@@ -12,8 +12,7 @@
     "viewApplications": "Anträge Anzeigen",
     "bankingAdvisor": "KI-Bankberater",
     "login": "Anmelden",
-    "profile": "Profil",
-    "howToPlay": "Spielanleitung"
+    "profile": "Profil"
   },
   "dashboard": {
     "title": "Kredit-Dashboard",
@@ -155,7 +154,7 @@
       "reason": "Starke ländliche Präsenz und spezielle Programme für Agrarkredite."
     },
     "kotak": {
-      "reason": "Wettbewerbsfähige Preise für Bewerber mit hoher Kreditwürdigkeit (750+). Personalisierter Service vor Ort."
+      "reason": "Wettbewerbsfähige Preise für Antragsteller mit hoher Kreditwürdigkeit (750+). Personalisierter Service vor Ort."
     },
     "bob": {
       "reason": "Gute Konditionen für Fahrzeugkredite und ein breites Filialnetz."
@@ -327,7 +326,7 @@
       "title": "Zusammenfassung des Kreditantrags"
     },
     "keyFacts": {
-      "title": "Wichtige Fakten"
+      "title": "Schlüssel-Fakten-Erklärung"
     },
     "marketComparison": {
       "title": "Marktvergleich für {{loanType}}"
@@ -362,7 +361,8 @@
     "support": {
       "title": "Support & Kontaktinformationen",
       "helpline": "Kunden-Support-Hotline"
-    }
+    },
+    "dashboardMetrics": "Dashboard-Metriken"
   },
   "currency": {
     "inr": "INR"
