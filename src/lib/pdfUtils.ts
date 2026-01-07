@@ -14,7 +14,7 @@ const HEADER_COLOR = '#2F4F4F';
 const TEXT_COLOR = '#333333';
 const BORDER_COLOR = '#CCCCCC';
 
-
+// Helper function to create placeholder loan data if none is available from the calculator.
 const createSampleLoanData = (i18n: I18nContextType): NonNullable<LoanReportData> => {
     const details = calculateLoanDetails(500000, 8.5, 60);
     return {
@@ -29,8 +29,7 @@ const createSampleLoanData = (i18n: I18nContextType): NonNullable<LoanReportData
     };
 };
 
-// A simple, safe number formatter specifically for the PDF to avoid special characters.
-// This function is the key to preventing "garbage values".
+// A simple, safe number formatter specifically for the PDF to prevent rendering errors.
 const formatPdfNumber = (value: number | string | undefined, currency = false): string => {
     if (value === undefined || value === null || value === '') return 'N/A';
     
@@ -42,7 +41,6 @@ const formatPdfNumber = (value: number | string | undefined, currency = false): 
     }
   
     // Use toFixed(2) for a simple, universally safe number-to-string conversion.
-    // This avoids locale-specific characters like commas.
     const fixedValue = num.toFixed(2);
     
     return currency ? `INR ${fixedValue}` : fixedValue;
@@ -55,7 +53,7 @@ export const generateLoanReportPdf = (i18n: I18nContextType, loanCalculationData
   const doc = new jsPDF({ orientation: 'p', unit: 'mm', format: 'a4' });
   
   // --- FONT SETUP ---
-  // Use a standard, built-in font. This is the critical change to prevent all font-related errors.
+  // Use a standard, built-in font like "Helvetica". This is the critical change to prevent all font-related errors.
   const FONT_FAMILY = "Helvetica";
   doc.setFont(FONT_FAMILY, "normal");
 
