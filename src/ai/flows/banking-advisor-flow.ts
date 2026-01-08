@@ -2,7 +2,6 @@
 'use server';
 
 import { ai } from '@/ai/genkit';
-import { generate } from '@genkit-ai/ai';
 import { z } from 'zod';
 
 const BankingAdvisorInputSchema = z.object({
@@ -44,7 +43,8 @@ const INTERNAL_KNOWLEDGE_BASE: Record<string, string> = {
 
   "business loan process": "The Business Loan process typically follows these steps: 1. Prepare a solid business plan and financial projections. 2. Gather documents: Business registration, KYC of promoters, last 3 years' audited financials, and bank statements. 3. Submit the application form along with the prepared documents. 4. The bank will assess the business's viability and creditworthiness. 5. After approval, the loan agreement is signed, and funds are disbursed.",
 
-  "default": "I am your Banking Advisor. I can assist you with Home Loans, Education Loans, Personal Loans, and documentation requirements. How may I assist you today?"
+  "fallback": "I can certainly assist with that inquiry. However, to ensure accuracy regarding your specific financial profile, I recommend visiting our nearest branch or checking the 'Loan Policy' section on our official website.",
+  "default": "Hello! I am your Banking Advisor. I can assist with loan information, processes, or even check your basic eligibility. How may I assist you today?"
 };
 
 export async function bankingAdvisorFlow(input: BankingAdvisorInput): Promise<BankingAdvisorOutput> {
@@ -62,11 +62,8 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
   async ({ query: userQuery }) => {
     // 1. QUERY PROCESSING
     const query = userQuery.toLowerCase().trim();
-    console.log(`[Banking Advisor] Received: "${query}"`);
 
-    // 2. CHECK INTERNAL KNOWLEDGE BASE (Layer 1 - Instant & Reliable)
-    
-    // NEW: Check for eligibility trigger phrases
+    // 2. INTERACTIVE ELIGIBILITY CHECK TRIGGER
     if (query.includes("eligible") || query.includes("eligibility") || query.includes("can i get a loan")) {
       return {
         flow: 'eligibilityCheck',
@@ -74,7 +71,7 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
       };
     }
     
-    // Process-specific queries
+    // 3. INTERNAL KNOWLEDGE BASE (INSTANT & RELIABLE ANSWERS)
     if (query.includes("home") && query.includes("process")) {
         return { text: INTERNAL_KNOWLEDGE_BASE["home loan process"] };
     }
@@ -93,8 +90,6 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
      if (query.includes("process")) { // General process query
         return { text: INTERNAL_KNOWLEDGE_BASE["loan process"] };
     }
-
-    // General info queries
     if (query.includes("interest") || query.includes("rate") || query.includes("roi")) {
         return { text: INTERNAL_KNOWLEDGE_BASE["home loan interest"] };
     }
@@ -114,37 +109,8 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
         return { text: INTERNAL_KNOWLEDGE_BASE["default"] };
     }
 
-    // 3. ATTEMPT REAL AI GENERATION (Layer 2 - For complex/new questions)
-    try {
-      console.log("   Sending to AI Model...");
-      const llmResponse = await generate({
-        model: ai.model, // Use the globally configured model from genkit.ts for consistency
-        prompt: `
-          You are a professional Banking Advisor for a major bank.
-          User Question: "${userQuery}"
-          
-          Guidelines:
-          - Answer ONLY questions related to banking and loans.
-          - Maintain a formal, polite, and professional tone.
-          - Do not provide specific financial advice or predict future market trends.
-          - Keep the answer concise (under 60 words).
-        `,
-      });
-
-      console.log("   ✅ AI Response Generated successfully.");
-      return { text: llmResponse.text(), flow: 'none' };
-
-    } catch (error: any) {
-      // 4. PROFESSIONAL FALLBACK (Layer 3 - Safety Net)
-      console.error("\n🔴 CRITICAL ERROR DETECTED 🔴");
-      console.error("   Error Type:", error.name);
-      console.error("   Message:", error.message);
-      if (error.response) console.error("   API Response:", JSON.stringify(error.response, null, 2));
-      console.error("------------------------------------------------\n");
-      
-      return { text: "I can certainly assist with that inquiry. However, to ensure accuracy regarding your specific financial profile, I recommend visiting our nearest branch or checking the 'Loan Policy' section on our official website.", flow: 'none' };
-    }
+    // 4. PROFESSIONAL FALLBACK (SAFETY NET)
+    // If no specific match is found, provide a safe, professional response.
+    return { text: INTERNAL_KNOWLEDGE_BASE["fallback"], flow: 'none' };
   }
 );
-
-    
