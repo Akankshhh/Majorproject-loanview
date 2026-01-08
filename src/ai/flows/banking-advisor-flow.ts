@@ -132,7 +132,7 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
       });
 
       console.log("   ✅ AI Response Generated successfully.");
-      return { text: llmResponse.text };
+      return { text: llmResponse.text(), flow: 'none' };
 
     } catch (error: any) {
       // 4. PROFESSIONAL FALLBACK (Layer 3 - Safety Net)
@@ -142,7 +142,9 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
       if (error.response) console.error("   API Response:", JSON.stringify(error.response, null, 2));
       console.error("------------------------------------------------\n");
       
-      return { text: "I can certainly assist with that inquiry. However, to ensure accuracy regarding your specific financial profile, I recommend visiting our nearest branch or checking the 'Loan Policy' section on our official website." };
+      return { text: "I can certainly assist with that inquiry. However, to ensure accuracy regarding your specific financial profile, I recommend visiting our nearest branch or checking the 'Loan Policy' section on our official website.", flow: 'none' };
     }
   }
 );
+
+    
