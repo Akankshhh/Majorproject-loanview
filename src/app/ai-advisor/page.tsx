@@ -7,7 +7,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 import { Button } from '@/components/ui/button';
 import { bankingAdvisorFlow } from '@/ai/flows/banking-advisor-flow';
 import { cn } from '@/lib/utils';
-import type { BankingAdvisorOutput } from '@/ai/flows/banking-advisor-flow';
+import type { BankingAdvisorOutput } from '@/types/ai-types';
 
 type Message = {
   id: number;
