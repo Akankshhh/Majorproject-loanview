@@ -3,7 +3,7 @@
 
 import { ai } from '@/ai/genkit';
 import { generate } from '@genkit-ai/ai';
-import { gemini15Flash } from '@genkit-ai/googleai';
+import { gemini15Flash } from '@genkit-ai/googleai'; // Keep for direct reference if needed, but we'll use the global model.
 import { z } from 'zod';
 
 const BankingAdvisorInputSchema = z.object({
@@ -80,7 +80,7 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
     try {
       console.log("   Sending to AI Model...");
       const llmResponse = await generate({
-        model: gemini15Flash, // Use the globally configured model from genkit.ts
+        model: ai.model, // Use the globally configured model from genkit.ts for consistency
         prompt: `
           You are a professional Banking Advisor for a major bank.
           User Question: "${userQuery}"
