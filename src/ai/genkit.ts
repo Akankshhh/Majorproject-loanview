@@ -1,16 +1,14 @@
 import {genkit} from 'genkit';
 import {googleAI} from '@genkit-ai/googleai';
 
-// This is the "Emergency Hardcode" fix.
+// This is the "Emergency Hardcode" fix, as instructed.
 // It forces the Genkit server to start by providing a dummy key,
 // bypassing the need for a real GOOGLE_API_KEY in the environment.
-// The AI Advisor logic has been simplified to rely on its internal knowledge,
-// so this key will not actually be used for core presentation questions.
 export const ai = genkit({
   plugins: [
     googleAI({
-      apiKey: "AIzaSy_Emergency_Dummy_Key_For_10_Days_Fix", 
+      apiKey: "AIzaSy_Emergency_Dummy_Key_for_10_Days_Fix", 
     }),
   ],
-  logLevel: "warn", // Keep logs clean
+  logLevel: "warn", // Keep logs clean to focus on critical errors.
 });
