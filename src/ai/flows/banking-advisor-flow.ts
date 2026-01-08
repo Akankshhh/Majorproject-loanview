@@ -77,6 +77,7 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
 
     // 3. ATTEMPT REAL AI GENERATION (Layer 2 - For complex/new questions)
     try {
+      console.log("   Sending to AI Model...");
       const llmResponse = await generate({
         model: ai.model, // Use the globally configured model from genkit.ts
         prompt: `
@@ -90,12 +91,14 @@ const bankingAdvisorGenkitFlow = ai.defineFlow(
           - Keep the answer concise (under 60 words).
         `,
       });
+
+      console.log("   ✅ AI Response Generated successfully.");
       return { text: llmResponse.text };
 
     } catch (error: any) {
       // 4. PROFESSIONAL FALLBACK (Layer 3 - Safety Net)
       // If the API Key fails, this runs. It looks like a standard banking response.
-      console.error("\n🔴 CRITICAL ERROR in bankingAdvisorFlow 🔴");
+      console.error("\n🔴 CRITICAL ERROR DETECTED 🔴");
       console.error("   Error Type:", error.name);
       console.error("   Message:", error.message);
       if (error.response) console.error("   API Response:", JSON.stringify(error.response, null, 2));
